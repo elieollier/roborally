@@ -1,26 +1,28 @@
-
-
 public class Bot {
 	
 	
 private int vie,x,y;;
 private String nom;
 private String img;
+private Orientation o  = Orientation.haut;
 
 
 
 public Bot( String nom,int vie,int x, int y) {
 	setNom( nom);
+	setVie(vie);
 	setX(x);
 	setY(y);
 	
 }
 
-public Bot(Bot r) {
-	setNom( r.nom);
-	setVie(r.vie);
- setX(r.x);
- setY(r.y);
+
+
+public Bot() {
+	setNom( this.nom);
+	setVie(this.vie);
+    setX(this.x);
+    setY(this.y);
  
  
 
@@ -58,6 +60,13 @@ public void setY(int y) {
 	this.y = y;
 }
 
+
+
+
+
+
+
+}
 
 
 
