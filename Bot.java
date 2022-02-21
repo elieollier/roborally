@@ -60,10 +60,7 @@ public void setO(Orientation o) {
 	this.o = o;
 }
 
-public int DeplacementD() {
-	x+=1;
-	return x;	
-}
+
 
 
 public String getImg() {
@@ -73,17 +70,30 @@ public String getImg() {
 public void setImg(String img) {
 	this.img = img;
 }
-public void Deplacement(CarteO carte) {
-	if (carte.getO() == Orientation.droite)
-		setX( getX()+ 1);
-	else if(carte.getO() == Orientation.gauche)
-		setX( getX()- 1);
-	else if (carte.getO() == Orientation.haut)
-		setY( getY()+ 1);
-	else
-		setY( getY()- 1);;
+
 	
-}
+public void Deplacement(Carte c) {
+	
+	switch(getO()) {
+	
+	
+	case haut:
+		setY(getY() + 1);
+		break;
+	case bas:
+		setY(getY() - 1);
+		break;
+	case droite:
+		setX(getX() + 1);
+		break;
+	case gauche:
+		setX(getX() - 1);
+		break;}
+	
+	
+	
+	
+	
 }
 
 
