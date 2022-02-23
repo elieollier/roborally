@@ -1,77 +1,27 @@
-
 public class Bot {
+
 	
-	
-private int vie,x,y;;
-private String nom;
-private String img;
+private int x,y,xCheck,yCheck;
+private int ordre;
+private int vie=3;
 private Orientation o  = Orientation.haut;
 
-public Bot(String nom,int vie,int x, int y) {
-	setNom(nom);
-	setVie(vie);
+
+
+public Bot(int x, int y) {
+	xCheck=x;
+	yCheck=y;
 	setX(x);
 	setY(y);
 	
 }
-
 public Bot() {
-	setNom(this.nom);
-	setVie(this.vie);
+	xCheck=x;
+	yCheck=y;
     setX(this.x);
     setY(this.y);
-
 }
 
-public int getVie() {
-	return vie;
-}
-
-public void setVie(int vie) {
-	this.vie = vie;
-}
-
-public String getNom() {
-	return nom;
-}
-
-public void setNom(String nom) {
-	this.nom = nom;
-}
-
-public int getX() {
-	return x;
-}
-public void setX(int x) {
-	this.x = x;
-}
-public int getY() {
-	return y;
-}
-public void setY(int y) {
-	this.y = y;
-}
-
-public Orientation getO() {
-	return o;
-}
-
-public void setO(Orientation o) {
-	this.o = o;
-}
-
-
-
-
-public String getImg() {
-	return img;
-}
-
-public void setImg(String img) {
-	this.img = img;
-}
-
-	
 public void Deplacement(Carte c) {
 	
 	switch(getO()) {
@@ -89,16 +39,76 @@ public void Deplacement(Carte c) {
 	case gauche:
 		setX(getX() - 1);
 		break;}
-	
-	
-	
-	
-	
+	// deux robots ne peuvent pas etre sur la même case	
+	// si le robot sort de la matrice théorique, il meurt...
+}
+
+
+public void Mourir() {
+	if(vie>0) {
+		vie-=1;
+		setX(xCheck);
+		setY(yCheck);
+	}if(vie==0) {
+		// le robot ne réapparait pas
+	}
+}
+
+
+public int getVie() {
+	return vie;
+}
+public void setVie(int vie) {
+	this.vie = vie;
+}
+
+public void reaparition(boolean dead , int vie) {
+	if(dead=true && vie>=1) {
+		// on réutilise la classe check-point
+	}if(vie==0) {
+		// on supprime le robot de la liste des Bot qui est dans le serveur que malo doit coder
+	}
 }
 
 
 
 
+public int getxCheck() {
+	return xCheck;
+}
+public void setxCheck(int xCheck) {
+	this.xCheck = xCheck;
+}
+public int getyCheck() {
+	return yCheck;
+}
+public void setyCheck(int yCheck) {
+	this.yCheck = yCheck;
+}
+public int getOrdre() {
+	return ordre;
+}
+public void setOrdre(int ordre) {
+	this.ordre = ordre;
+}
 
+public Orientation getO() {
+	return o;
+}
+public void setO(Orientation o) {
+	this.o = o;
+}
 
-
+public int getX() {
+	return x;
+}
+public void setX(int x) {
+	this.x = x;
+}
+public int getY() {
+	return y;
+}
+public void setY(int y) {
+	this.y = y;
+}
+}
