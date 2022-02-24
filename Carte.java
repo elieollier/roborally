@@ -1,7 +1,9 @@
 
-public  abstract class Carte {
+
+import java.io.Serializable;
+
+public  abstract class Carte  implements Serializable{
 	private String nom,description;
-	private boolean used = false;
 	private String img;
 	
 	
@@ -9,6 +11,12 @@ public  abstract class Carte {
 		this.nom = nom;
 		this.description = description;
 	}
+	
+	
+	
+
+
+
 
 
 	public String getNom() {
@@ -31,15 +39,7 @@ public  abstract class Carte {
 	}
 
 
-	public boolean isUsed() {
-		return used;
-	}
 
-
-	public void setUsed(boolean used) {
-		this.used = used;
-	}
-	
 	
 	
 	
