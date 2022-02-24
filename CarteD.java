@@ -7,6 +7,8 @@ public class CarteD  extends Carte{
 		super(nom,description);
 		this.vitesse  = vitesse;
 	}
+	
+	
 
 
 	public int getVitesse() {
@@ -17,8 +19,23 @@ public class CarteD  extends Carte{
 	public void setVitesse(int vitesse) {
 		this.vitesse = vitesse;
 	}
-
 	
+
+	public void effet(Bot r, int deplacement) {
+		
+					
+		for (int i =0 ; i < deplacement; i++) {
+				
+			r.deplacement();}
+		}
+		
+		
+		
+		
+		
+	
+
+
 
 
 }
