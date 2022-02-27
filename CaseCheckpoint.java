@@ -1,6 +1,6 @@
 package test;
 
-public abstract class CaseCheckPoint implements Case {
+public class CaseCheckPoint implements Case {
 
 int ordre ;
 	
