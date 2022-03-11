@@ -24,5 +24,3 @@ public class CarteO  extends Carte{
 	
 
 }
-
-}
