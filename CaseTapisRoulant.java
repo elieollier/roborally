@@ -1,10 +1,9 @@
 public class CaseTapisRoulant implements Case{
 
-private Orientation o  = Orientation.haut;
 
 
 
-public void effet(Bot r) {
+public void effet(Bot r,Orientation o) {
 		if (o == Orientation.droite)
 			r.setX( r.getX()+ 1);
 		else if(o== Orientation.gauche)
