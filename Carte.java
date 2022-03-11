@@ -16,7 +16,7 @@ public  abstract class Carte  implements Serializable{
 	
 
 
-
+	public abstract void effet(Bot r);
 
 
 	public String getNom() {
