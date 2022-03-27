@@ -1,8 +1,5 @@
 public class CarteO  extends Carte{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+private static final long serialVersionUID = 1L;
 	private Orientation o;
 	
 	public CarteO(String nom,String description, Orientation o) {
@@ -14,6 +11,11 @@ public class CarteO  extends Carte{
    public void effet(Bot r) {
 	   r.setO(o);
    }
+	
+	
+	public void effet(Bot r, int depalcement) {
+		
+	}
 	
 	
 	
