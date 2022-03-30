@@ -1,4 +1,4 @@
-public class CaseLaser implements case {
+public class CaseLaser implements Case {
 	private String nom = "laser";
 	
 	public String getNom() {
