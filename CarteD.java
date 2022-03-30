@@ -9,7 +9,7 @@ public class CarteD  extends Carte{
 	
 	public CarteD(int deplacement) {
 		this.deplacement  = deplacement;
-		this.nom = "deplacement"+String.valueOf(deplacement);
+		this.nom = "d"+String.valueOf(deplacement);
 		this.vitesse = new Random().nextInt(500);
 	}
 	
