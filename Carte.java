@@ -3,48 +3,19 @@
 import java.io.Serializable;
 
 public  abstract class Carte  implements Serializable{
-private String nom,description;
-	private String img;
+	private String nom;
 	
 	
-	public Carte (String nom, String description  ) {
+	public Carte (String nom) {
 		this.nom = nom;
-		this.description = description;
-	}
-	
-	public Carte() {
-		
-	}
-	
-
+	}	
 
 	public abstract void effet(Bot r);
 	public abstract void effet(Bot r, int deplacement);
 
 
-	public String getNom() {
+	public abstract String getNom() {
 		return nom;
-	}
-
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-
-	public String getDescription() {
-		return description;
-	}
-
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-
-
-	
-	
-	
+	}	
 
 }
