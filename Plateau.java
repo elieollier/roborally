@@ -16,7 +16,7 @@ Random  rand  = new Random();
 	lis_carte.add(new CaseBroyeur());
 	lis_carte.add(new CaseCheckpoint(0));
 	lis_carte.add(new CaseNormale());
-	lis_carte.add(new CaseTapisRoulant());
+	lis_carte.add(new CaseTapisRoulant(Orientation.bas));
 	lis_carte.add(new CaseTrou());
 	return lis_carte;
 	}
