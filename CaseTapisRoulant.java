@@ -1,23 +1,24 @@
-public class CaseTapisRoulant implements Case{
-
-
 public class CaseTapisRoulant implements Case {
-		   private Orientation o ;
-	   
-	   public CaseTapisRoulant(Orientation o) {
-		   this.o = o;
-		   
-		   
-	   }
+	private Orientation o ;
 	
-	   
-	   public void effet(Bot r) {
-		   if( r.getO() != o) {
-			   r.mourir();
-		   }
-		   else {
-			   r.deplacement();
-		   }
-		   
+	private String nom = "tapisroulant";
+	
+	public String getNom() {
+		return nom;
+	}
+	
+	public CaseTapisRoulant(Orientation o) {
+	   this.o = o;
+	}
+
+
+	public void effet(Bot r) {
+	   if( r.getO() != o) {
+		   r.mourir();
 	   }
+	   else {
+		   r.deplacement();
+	   }
+
+	}
 }
