@@ -1,6 +1,6 @@
 package test;
 
-public class CaseCheckPoint implements Case {
+public class CaseCheckpoint implements Case {
 	int ordre ;
 	
 	private String nom = "checkpoint";
