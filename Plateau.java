@@ -2,10 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Plateau {
-	private int taille = 12;
-	private Case cases[][] = new Case[10][10];
-
-	Random  rand  = new Random();
+	private int taille = 10;
+	private Case cases[][] = new Case[taille][taille];
 	
 	
 	 public ArrayList<Case> remplissage(){
