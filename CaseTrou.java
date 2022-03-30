@@ -1,4 +1,4 @@
-public class CaseTrou implements Case {
+public class CaseTrou extends Case {
 	private String nom = "trou";
 	
 	public String getNom() {
