@@ -33,3 +33,4 @@ public class CaseCheckPoint implements Case {
 			System.out.println("L'ordre doit être positif. ");
 		
 	}
+}
