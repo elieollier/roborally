@@ -6,16 +6,16 @@ public class Plateau {
 	private Case cases[][] = new Case[taille][taille];
 	
 	
-	 public ArrayList<Case> remplissage(){
-		 ArrayList <Case> lis_carte =  new ArrayList <Case>();
-		lis_carte.add(new CaseBroyeur());
-		lis_carte.add(new CaseCheckpoint(0));
-		lis_carte.add(new CaseNormale());
-		lis_carte.add(new CaseTapisRoulant(Orientation.bas));
-		lis_carte.add(new CaseTrou());
-		lis_carte.add(new CaseLaser());
-		return lis_carte;
-		}
+//	 public ArrayList<Case> remplissage(){
+//		 ArrayList <Case> lis_carte =  new ArrayList <Case>();
+//		lis_carte.add(new CaseBroyeur());
+//		lis_carte.add(new CaseCheckpoint(0));
+//		lis_carte.add(new CaseNormale());
+//		lis_carte.add(new CaseTapisRoulant(Orientation.bas));
+//		lis_carte.add(new CaseTrou());
+//		lis_carte.add(new CaseLaser());
+//		return lis_carte;
+//		}
 	 
 		
 //	public Plateau() {
