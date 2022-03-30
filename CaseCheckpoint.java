@@ -1,8 +1,13 @@
 package test;
 
 public class CaseCheckPoint implements Case {
-
-int ordre ;
+	int ordre ;
+	
+	private String nom = "checkpoint";
+	
+	public String getNom() {
+		return nom;
+	}
 	
 	
 	public  CaseCheckPoint( int ordre) {
