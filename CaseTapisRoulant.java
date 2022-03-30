@@ -1,4 +1,4 @@
-public class CaseTapisRoulant implements Case {
+public class CaseTapisRoulant extends Case {
 	private Orientation o ;
 	
 	private String nom = "tapisroulant";
