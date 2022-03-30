@@ -1,9 +1,6 @@
-package test;
-
-public class CaseCheckpoint implements Case {
-	int ordre ;
-	
+public class CaseCheckpoint extends Case {
 	private String nom = "checkpoint";
+	int ordre;
 	
 	public String getNom() {
 		return nom;
