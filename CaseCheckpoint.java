@@ -10,7 +10,7 @@ public class CaseCheckpoint implements Case {
 	}
 	
 	
-	public  CaseCheckPoint( int ordre) {
+	public  CaseCheckpoint( int ordre) {
 		setOrdre(ordre);
 	}
 	
