@@ -17,7 +17,11 @@ public class SetDeCartes {
 	}
 	
 	public void addRandomCarte() {
-		deck.add( listeDesCartesDuJeu[new Random().nextInt( 1+ deck.size() )] );
+		deck.add( listeDesCartesDuJeu[new Random().nextInt( listeDesCartesDuJeu.length )] );
+	}
+	
+	public Carte get(int i) {
+		return deck.get(i);
 	}
 	
 	public void remove(Carte carte) {
