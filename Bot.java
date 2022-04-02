@@ -44,6 +44,34 @@ private int x,y,xCheck,yCheck;
 		
 		// deux robots ne peuvent pas etre sur la même case	-> Méthode dans le serveur : Y'a il un robot sur la case ?
 	}
+	
+	public void deplacementInverse() { 
+		// Annule le deplacement() / Fait reculer le robot dans le sens inverse de son orientation
+		
+		switch(getO()) {	
+			case haut:
+				setX(getX() - 1);
+				break;
+			case bas:
+				setX(getX() + 1);
+				break;
+			case droite:
+				setY(getY() - 1);
+				break;
+			case gauche:
+				setY(getY() + 1);
+				break;
+		}
+		
+		// si le robot sort de la matrice théorique, il meurt...
+		if(x<0 || x > Plateau.getTaille()-1 || y<0 || y > Plateau.getTaille()-1 
+				&& x != -1 && y != -1) {
+			mourir();
+		}
+		
+		// deux robots ne peuvent pas etre sur la même case	-> Méthode dans le serveur : Y'a il un robot sur la case ?
+	}
+	
 
 
 	public void mourir() {
