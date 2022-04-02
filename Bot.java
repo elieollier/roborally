@@ -20,19 +20,19 @@ private int x,y,xCheck,yCheck;
 	}
 
 	public void deplacement() {
-		
+	
 		switch(getO()) {	
 			case haut:
-				setY(getY() + 1);
-				break;
-			case bas:
-				setY(getY() - 1);
-				break;
-			case droite:
 				setX(getX() + 1);
 				break;
-			case gauche:
+			case bas:
 				setX(getX() - 1);
+				break;
+			case droite:
+				setY(getY() + 1);
+				break;
+			case gauche:
+				setY(getY() - 1);
 				break;
 		}
 		
