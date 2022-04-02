@@ -42,7 +42,8 @@ private int x,y,xCheck,yCheck;
 			mourir();
 		}
 		
-		// deux robots ne peuvent pas etre sur la même case	-> Méthode dans le serveur : Y'a il un robot sur la case ?
+		// deux robots ne peuvent pas etre sur la même case	
+		// -> Méthode dans le serveur : Y'a il un robot sur la case ?
 	}
 	
 	public void deplacementInverse() { 
@@ -69,10 +70,21 @@ private int x,y,xCheck,yCheck;
 			mourir();
 		}
 		
-		// deux robots ne peuvent pas etre sur la même case	-> Méthode dans le serveur : Y'a il un robot sur la case ?
+		// deux robots ne peuvent pas etre sur la même case	
+		// -> Méthode dans le serveur : Y'a il un robot sur la case ?
 	}
 	
 
+	public void laser() {
+		if(o == Orientation.haut || o == Orientation.bas) {
+			// faire mourrir les robots sur la colonne getY()
+			// Fonction du serveur
+		}
+		else { //(o == Orientation.gauche || o == Orientation.droite)
+			// faire mourrir les robots sur la ligne getX()
+			// Fonction du serveur
+		}
+	}
 
 	public void mourir() {
 		if(vie>0) { // le robot reprend sa copie de sauvegarde
