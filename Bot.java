@@ -43,7 +43,9 @@ private int x,y,xCheck,yCheck;
 		}
 		
 		// deux robots ne peuvent pas etre sur la même case	
-		// -> Méthode dans le serveur : Y'a il un robot sur la case ?
+		if(Serveur.botDansLaCase(x, y) && x != -1 && y != -1) {
+			deplacementInverse();
+		}
 	}
 	
 	public void deplacementInverse() { 
@@ -71,18 +73,18 @@ private int x,y,xCheck,yCheck;
 		}
 		
 		// deux robots ne peuvent pas etre sur la même case	
-		// -> Méthode dans le serveur : Y'a il un robot sur la case ?
+		if(Serveur.botDansLaCase(x, y) && x != -1 && y != -1) {
+			deplacementInverse();
+		}
 	}
 	
 
 	public void laser() {
 		if(o == Orientation.haut || o == Orientation.bas) {
-			// faire mourrir les robots sur la colonne getY()
-			// Fonction du serveur
+			Serveur.faireMourirTousLesBotsColonne(x);
 		}
 		else { //(o == Orientation.gauche || o == Orientation.droite)
-			// faire mourrir les robots sur la ligne getX()
-			// Fonction du serveur
+			Serveur.faireMourirTousLesBotsLigne(y);
 		}
 	}
 
