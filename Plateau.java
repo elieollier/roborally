@@ -2,9 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Plateau {
-	private int taille = 10;
+	private static int taille = 10;
 	private Case cases[][] = new Case[taille][taille];
-	
 	
 //	 public ArrayList<Case> remplissage(){
 //		 ArrayList <Case> lis_carte =  new ArrayList <Case>();
@@ -30,6 +29,8 @@ public class Plateau {
 //		}
 //	}
 	 
+	
+	
 	 public Plateau() {
 		  for (int  i = 0 ; i < cases.length; i++) {
 			  cases[i][0] = new CaseNormale();
@@ -132,6 +133,10 @@ public class Plateau {
 		  }		  
 		}
 	
+	public static int getTaille() {
+		return taille;
+	}
+
 	public Case caseEnIJ(int i, int j) {
 		if ((i >= 0) && (j >= 0) && (i < taille) && (j < taille))
 			return cases[i][j];
