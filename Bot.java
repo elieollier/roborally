@@ -1,11 +1,9 @@
 public class Bot {
 
 private int x,y,xCheck,yCheck;
-	private int ordre;
-	private int vie=3;
+	private int ordre= 0;
+	private int vie= 3;
 	private Orientation o  = Orientation.haut;
-
-
 
 	public Bot(int x, int y) {
 		xCheck=x;
@@ -23,70 +21,71 @@ private int x,y,xCheck,yCheck;
 
 	public void deplacement() {
 		
-		switch(getO()) {
+		switch(getO()) {	
+			case haut:
+				setY(getY() + 1);
+				break;
+			case bas:
+				setY(getY() - 1);
+				break;
+			case droite:
+				setX(getX() + 1);
+				break;
+			case gauche:
+				setX(getX() - 1);
+				break;
+		}
 		
-		
-		case haut:
-			setY(getY() + 1);
-			break;
-		case bas:
-			setY(getY() - 1);
-			break;
-		case droite:
-			setX(getX() + 1);
-			break;
-		case gauche:
-			setX(getX() - 1);
-			break;}
-		// deux robots ne peuvent pas etre sur la même case	
 		// si le robot sort de la matrice théorique, il meurt...
+		if(x<0 || x > Plateau.getTaille()-1 || y<0 || y > Plateau.getTaille()-1 
+				&& x != -1 && y != -1) {
+			mourir();
+		}
+		
+		// deux robots ne peuvent pas etre sur la même case	-> Méthode dans le serveur : Y'a il un robot sur la case ?
 	}
 
 
 	public void mourir() {
-		if(vie>0) {
+		if(vie>0) { // le robot reprend sa copie de sauvegarde
 			vie-=1;
 			setX(xCheck);
 			setY(yCheck);
-		}if(vie==0) {
-			// le robot ne réapparait pas
+		}
+		if(vie==0) { // le robot ne réapparait pas
+			setX(-1);
+			setY(-1);
 		}
 	}
-
 
 	public int getVie() {
 		return vie;
 	}
+	
 	public void setVie(int vie) {
 		this.vie = vie;
 	}
 
-	public void reaparition(boolean dead , int vie) {
-		if(dead=true && vie>=1) {
-			// on réutilise la classe check-point
-		}if(vie==0) {
-			// on supprime le robot de la liste des Bot qui est dans le serveur que malo doit coder
-		}
-	}
-
-
-
-
 	public int getxCheck() {
 		return xCheck;
 	}
+	
 	public void setxCheck(int xCheck) {
 		this.xCheck = xCheck;
 	}
+	
 	public int getyCheck() {
 		return yCheck;
 	}
+	
 	public void setyCheck(int yCheck) {
 		this.yCheck = yCheck;
 	}
+	
 	public int getOrdre() {
 		return ordre;
 	}
+	
 	public void setOrdre(int ordre) {
 		this.ordre = ordre;
 	}
@@ -94,6 +93,7 @@ private int x,y,xCheck,yCheck;
 	public Orientation getO() {
 		return o;
 	}
+	
 	public void setO(Orientation o) {
 		this.o = o;
 	}
@@ -101,17 +101,16 @@ private int x,y,xCheck,yCheck;
 	public int getX() {
 		return x;
 	}
+	
 	public void setX(int x) {
 		this.x = x;
 	}
+	
 	public int getY() {
 		return y;
 	}
+	
 	public void setY(int y) {
 		this.y = y;
-	
-	
-	
-	
-}
+	}
 }
