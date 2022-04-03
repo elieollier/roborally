@@ -1,8 +1,11 @@
+import java.util.Random;
+
 public class Bot {
 
 private int x,y,xCheck,yCheck;
 	private int ordre= 0;
 	private int vie= 3;
+	private final String ID;
 	private Orientation o  = Orientation.haut;
 
 	public Bot(int x, int y) {
@@ -10,13 +13,7 @@ private int x,y,xCheck,yCheck;
 		yCheck=y;
 		setX(x);
 		setY(y);
-		
-	}
-	public Bot() {
-		xCheck=x;
-		yCheck=y;
-	    setX(this.x);
-	    setY(this.y);
+		ID = String.valueOf(new Random().nextInt()*1000);
 	}
 
 	public void deplacement() {
@@ -155,4 +152,9 @@ private int x,y,xCheck,yCheck;
 	public void setY(int y) {
 		this.y = y;
 	}
+
+	public String getID() {
+		return ID;
+	}
+	
 }
