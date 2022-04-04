@@ -8,6 +8,7 @@ private int x,y,xCheck,yCheck;
 	private final String ID;
 	private Orientation o  = Orientation.haut;
 
+	
 	public Bot(int x, int y) {
 		xCheck=x;
 		yCheck=y;
