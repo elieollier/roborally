@@ -20,9 +20,20 @@ public class CarteD  extends Carte{
 	public int getVitesse() {
 		return vitesse;
 	}
+	
+	public int getDeplacement() {
+		return deplacement;
+	}
 
 	public void effet(Bot r) {
 		for (int i =0 ; i < deplacement; i++) {	
 			r.deplacement();}
 		}
+
+	@Override
+	public String toString() {
+		return "CarteD [deplacement=" + deplacement + ", vitesse=" + vitesse + "]";
+	}
+	
+	
 }
