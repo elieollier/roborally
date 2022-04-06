@@ -83,8 +83,8 @@ public class Plateaufabi {
           cases[9][9]  = new CaseCheckpoint(3);
           
           //reparation
-          cases[0][9] = new CaseReparer()
-          cases[7][0] = new CaseReparer()
+          cases[0][9] = new CaseReparer();
+          cases[7][0] = new CaseReparer();
           
           
           
