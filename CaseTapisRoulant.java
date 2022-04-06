@@ -11,6 +11,9 @@ public class CaseTapisRoulant extends Case {
 	   this.o = o;
 	}
 
+	public Orientation getO() {
+		return o;
+	}
 
 	public void effet(Bot r) {
 	   if( r.getO() != o) {
