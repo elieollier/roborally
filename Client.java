@@ -16,117 +16,92 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Client 
+public class Client
 {
 	
 
-
-     static Plateau plateauClient   = new Plateau();
-   static Bot robotClient   = Bot.apparition(plateauClient);
-    static  LinkedList  <Bot> robotsAutresJoueurs  ;
-    static SetDeCartes cartesClient = new SetDeCartes();
-  
-    
-  
-
- 	
- 	public static void remplacerRobots(Bot r) throws ClassNotFoundException, IOException {
- 		Iterator < Bot > it  = robotsAutresJoueurs.iterator();
- 		boolean rechercheFinie = false;
- 	
- 		while(it.hasNext() && !rechercheFinie) {
- 			Bot robotRemplace = it.next();
- 			if(robotRemplace.getID().equals(r.getID())) {
- 				robotRemplace = r;
- 				rechercheFinie = true;}}
-  		
- 		 	} 
- 		
- 	
- 	
- 	
- 	
-  	
+ 
+	
     public static void main(String[] args) throws Exception 
     {
+    
     	
 
-     
- 
-  	
-   
+        Plateau plateauClient   = new Plateau();
+        Bot robotClient   = new  Bot(plateauClient );
+         System.out.println(robotClient.getID());
+        ArrayList  <Bot> robotsAutresJoueurs =  new ArrayList <Bot>() ;
+        SetDeCartes cartesClient = new SetDeCartes();
+       
+       
+        
 
-    	
-        try
-        {
-        	
-            Scanner scn = new Scanner(System.in);
+    	      
+    try  {
+        
               
-            // getting localhost ip
+            
             InetAddress ip = InetAddress.getByName("localhost");
       
-            // establish the connection with server port 5056
+           
             Socket s = new Socket(ip, 5056);
       
-            // obtaining input and out streams
+            // On récupère les flux du client ;
             
             ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
             ObjectInputStream in   = new ObjectInputStream(s.getInputStream());
-          
-          out.writeObject(robotClient);
-          out.writeObject(cartesClient);
-          robotsAutresJoueurs  = ( LinkedList <Bot>) in.readObject();
-          
-          
-           String msgRecu;
-           int commande;
-           boolean jouer;
-           
-            // the following loop performs the exchange of
-            // information between client and client handler
-            while (true) 
-            {
-            	 jouer = false;
-            	
-             
-            	msgRecu = (String) in.readObject();
-            	System.out.println(msgRecu);
-        	
-           
-            while( !jouer) {
-            	commande  = scn.nextInt();
-            	if( commande <= 9 && commande >= 1) {
-            		out.writeObject(commande);
-            		
-            		System.out.println("ok");
-            		jouer = true;
-            		
-            	}
-            	else {
-            		System.out.println(msgRecu);
-            		
-            	}
-            	  }
-   
-           
-            System.out.println(in.readObject());
             
             
-            if( robotClient.getVie() <= 0  || robotClient.getNbdrapeaux() == 0) {
-            	// Si le joueur n'a plus de vie alors la partie s'achève.
-            	out.writeObject(-1);
-            	s.close();
-            	scn.close();
-            	System.out.println("Tu à perdu!");
-            	
-            	break;
+            out.writeObject(robotClient);
+            out.writeObject(plateauClient);
+            robotsAutresJoueurs  = ( ArrayList <Bot> ) in.readObject();	
+            
+            for (int i =0 ; i < robotsAutresJoueurs.size() ; i++ ) {
+            System.out.println( robotsAutresJoueurs.get(i).getID());
             }
-        
-          
-              
+            
+       
+       	 GraphicWindow fenetreJoueur  = new GraphicWindow(plateauClient,robotsAutresJoueurs,robotClient.getID());
+       	 fenetreJoueur.setVisible(true);
+//       	 
+       	
    
-            	
-  }
+     
+     
+      // 	while (robotClient.getVie() > 0  )    {
+       		
+       		
+       		fenetreJoueur.setSetDeCartes(new SetDeCartes());
+        	          	
+            while(fenetreJoueur.getListeDesCartesCliquees().size() != 5) {
+           	 System.out.println(fenetreJoueur.getListeDesCartesCliquees().size());
+           	 
+            }
+            
+            
+            System.out.println(fenetreJoueur.getListeDesCartesCliquees());
+            
+            out.writeObject(fenetreJoueur.getListeDesCartesCliquees());
+            fenetreJoueur.setListeDesBots(( ArrayList <Bot> ) in.readObject());
+            
+            
+            
+           
+
+         
+     
+        
+         
+         
+            	//  }  ;
+            
+
+            
+            
+            
+   
+   
+
             
            
             
@@ -135,11 +110,14 @@ public class Client
            
         }catch(Exception e){
             e.printStackTrace();
-          
+         
               
-        }
+        }  
         
+   
+    
     }
     
 }
+    
     
