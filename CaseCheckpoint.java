@@ -24,7 +24,8 @@ public class CaseCheckpoint extends Case {
 		return ordre;
 	}
 	public void setOrdre(int ordre) {
-		if( ordre <= 0) {
+		System.out.println(ordre);
+		if( ordre >= 0) {
 		this.ordre = ordre;}
 		else
 			System.out.println("L'ordre doit être positif. ");
