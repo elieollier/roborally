@@ -1,16 +1,23 @@
-public class CaseCheckpoint extends Case {
-	private String nom = "checkpoint";
+public class CaseCheckpoint implements Case {
 	int ordre;
+	private String nom = "checkpoint";
+	private String description = 
+			"Ci-contre vous trouverez l'image qui représente les cases Checkpoint.\n"
+			+ "Les cases Checkpoint sont les cases où votre robot doit aller dans "
+			+ "l'ordre pour gagner, il ne risque rien pour sa vie, il peut donc y "
+			+ "aller en toute tranquillité.\n";
+	
+	public String getDescription() {
+		return description;
+	}
 	
 	public String getNom() {
 		return nom;
 	}
 	
-	
 	public  CaseCheckpoint( int ordre) {
 		setOrdre(ordre);
 	}
-	
 	
 	public void effet(Bot r) {
 		if(  this.ordre - r.getOrdre() == 1) {
@@ -29,6 +36,5 @@ public class CaseCheckpoint extends Case {
 		this.ordre = ordre;}
 		else
 			System.out.println("L'ordre doit être positif. ");
-		
 	}
 }
