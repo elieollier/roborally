@@ -1,14 +1,12 @@
 import java.util.Random;
 
 public class Bot {
-
-private int x,y,xCheck,yCheck;
-	private int ordre= 0;
+	private int x,y,xCheck,yCheck;
+	private int ordre = 0;
 	private int vie= 3;
 	private final String ID;
 	private Orientation o  = Orientation.haut;
 
-	
 	public Bot(int x, int y) {
 		xCheck=x;
 		yCheck=y;
@@ -96,6 +94,10 @@ private int x,y,xCheck,yCheck;
 			setX(-1);
 			setY(-1);
 		}
+	}
+	
+	public String getNom() {
+		return "bot"+String.valueOf(o);
 	}
 
 	public int getVie() {
