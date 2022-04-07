@@ -3,9 +3,9 @@ public class CaseCheckpoint implements Case {
 	private String nom = "checkpoint";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Checkpoint.\n"
-			+ "Les cases Checkpoint sont les cases où votre robot doit aller dans "
-			+ "l'ordre pour gagner, il ne risque rien pour sa vie, il peut donc y "
-			+ "aller en toute tranquillité.\n";
+			+ "Les cases Checkpoint sont les cases où votre robot doit aller dans\n"
+			+ "l'ordre pour gagner, il ne risque rien pour sa vie, il peut donc y\n"
+			+ "aller en toute tranquillité.";
 	
 	public String getDescription() {
 		return description;
