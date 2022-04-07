@@ -4,32 +4,7 @@ import java.util.Random;
 public class Plateaufabi {
     private static int taille = 10;
     private Case cases[][] = new Case[taille][taille];
-    
-//     public ArrayList<Case> remplissage(){
-//         ArrayList <Case> lis_carte =  new ArrayList <Case>();
-//        lis_carte.add(new CaseBroyeur());
-//        lis_carte.add(new CaseCheckpoint(0));
-//        lis_carte.add(new CaseNormale());
-//        lis_carte.add(new CaseTapisRoulant(Orientation.bas));
-//        lis_carte.add(new CaseTrou());
-//        lis_carte.add(new CaseLaser());
-//        return lis_carte;
-//        }
-     
         
-//    public Plateau() {
-//    
-//         cases = new Case[taille][taille];
-//         ArrayList <Case> lis_carte = remplissage();
-//         
-//         for (int i =0 ; i < taille; i++) {
-//             for (int j = 0; j < taille; j++) {
-//                 cases[i][j] = lis_carte.get(rand.nextInt(lis_carte.size())); 
-//             }
-//        }
-//    }
-     
-    
     
      public Plateaufabi() {
           for (int  i = 0 ; i < cases.length; i++) {
