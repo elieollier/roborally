@@ -1,10 +1,8 @@
 public class CaseTapisRoulant extends Case {
 	private Orientation o ;
 	
-	private String nom = "tapisroulant";
-	
 	public String getNom() {
-		return nom;
+		return "tapisroulant"+String.valueOf(o);
 	}
 	
 	public CaseTapisRoulant(Orientation o) {
