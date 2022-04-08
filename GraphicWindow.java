@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Desktop;
+import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridLayout;
@@ -41,6 +42,7 @@ public class GraphicWindow extends JFrame {
 	private Plateau plateau;
 	private ArrayList<Bot> listeDesBots;
 	private String idHisBot;
+	private Bot hisBot;
 	
 	private List<Carte> listeDesCartesCliquees = new ArrayList<Carte>();
 	private SetDeCartes listeDesCartes = new SetDeCartes();
@@ -67,10 +69,9 @@ public class GraphicWindow extends JFrame {
 	}
 	
 	private void remplissageBorderLayout() throws Exception {
-		//-- CENTER --\\
-		contentPane.add(creationPlateau(), BorderLayout.CENTER);
 		
-		Bot hisBot = null;
+		//Récupération du robot client dans la liste
+		hisBot = null;
 		for (int i = 0; i < listeDesBots.size(); i++) {
 			if(listeDesBots.get(i).getID().equals(idHisBot)) {
 				hisBot = listeDesBots.get(i);
@@ -78,57 +79,11 @@ public class GraphicWindow extends JFrame {
 			}
 		}
 		
-		//-- SOUTH --\\
-		JLabel label;
-		if (hisBot != null && hisBot.getX() != -1 && hisBot.getY() != -1) {
-			label= new JLabel("Nombre de joueurs : "+listeDesBots.size()+"    |    "
-					+ "Copies de sauvegarde restantes : "+hisBot.getVie()+"    |    "
-					+ "Coordonnées du robot : Ligne "+(hisBot.getX()+1)+", Colonne "+(hisBot.getY()+1)+"    |    "
-					+ "CheckPoint validés : "+hisBot.getOrdre()+"    |    "
-					+ "");
-			
-			if (bruitageCase == true) {
-				try {
-					Case caseIJ = plateau.caseEnIJ(hisBot.getX(), hisBot.getY());
-					if(hisBot.getOrdre()==3) {
-						GraphicWindow.this.musique("Sons/gagner.wav");
-						JOptionPane.showMessageDialog(GraphicWindow.this,
-							    "Félicitations, votre mission est reussie !\n"
-							    + "Vous avez gagné, mais à un détail près, vous auriez pu perdre.\n"
-							    + "Quelle chance, et quel talent !",
-							    "Fin de partie : Vous avez pu sauver l'humanité",
-							    JOptionPane.INFORMATION_MESSAGE,
-							    new ImageIcon("Images/gagner.png") );
-					}
-					else if(caseIJ instanceof CaseCheckpoint)
-						GraphicWindow.this.musique("Sons/checkpoint.wav");
-					else
-						GraphicWindow.this.musique("Sons/deplacement.wav");
-				} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
-					e1.printStackTrace();
-				}
-				bruitageCase = false;
-			}
-		}
-		else {
-			try {
-				GraphicWindow.this.musique("Sons/mourir.wav");
-			} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
-				e1.printStackTrace();
-			}
-			JOptionPane.showMessageDialog(GraphicWindow.this,
-				    "Mission échouée...\n"
-				    + "Votre robot est détruit, malheureusement il est impossible de le réanimer.",
-				    "Fin de partie : Vous n'avez pas pu sauver l'humanité",
-				    JOptionPane.INFORMATION_MESSAGE,
-				    new ImageIcon("Images/mourir.png") );
-			bruitages = false;
-			label = new JLabel("Mission échouée...  Votre robot est détruit, malheureusement il est impossible de le réanimer.");
-		}
-			
-		label.setBorder(BorderFactory.createEmptyBorder(15, 10, 15, 10));
-		contentPane.add(label, BorderLayout.SOUTH);
+		//-- CENTER --\\
+		contentPane.add(creationPlateau(), BorderLayout.CENTER);
 		
+		//-- SOUTH --\\
+		contentPane.add(statistiques(), BorderLayout.SOUTH);
 		
 		//-- WEST --\\
 		contentPane.add( creationCoteGauche(), BorderLayout.WEST);
@@ -154,7 +109,90 @@ public class GraphicWindow extends JFrame {
 		contentPane.repaint();
 		contentPane.revalidate();
 	}
-
+	
+	private JPanel statistiques() throws IOException {
+		JPanel panel = new JPanel(new FlowLayout(0));
+		
+		String id = hisBot == null ? "" : hisBot.getID();
+		JButton bouton = new JButton("Votre Robot porte le n° "+id, new ImageIcon("Images/barrebot.gif"));
+			bouton.addActionListener(e->{
+				String message = "";
+				for(int i = 0; i < listeDesBots.size(); i++) {
+					message += "Robot ("+(1+listeDesBots.get(i).getX())+","+(1+listeDesBots.get(i).getY())+") / "
+							+ listeDesBots.get(i).getVie()+" vie.s / "
+							+ listeDesBots.get(i).getOrdre()+" checkpoint.s validé.s\n";
+				}
+				JOptionPane.showMessageDialog(GraphicWindow.this,
+					    message,
+					    "Statistiques de tous les joueurs",
+					    JOptionPane.INFORMATION_MESSAGE,
+					    new ImageIcon("Images/Bot/bot.png") );
+			});
+			bouton.setVerticalTextPosition(SwingConstants.BOTTOM);
+			bouton.setHorizontalTextPosition(SwingConstants.CENTER);
+			bouton.setContentAreaFilled(false);
+			bouton.setBorderPainted(false);
+		panel.add(bouton);
+		
+		panel.add(new JLabel("           Copies de sauvegarde restantes : "));
+			if(hisBot != null)
+				for(int i = 0; i < hisBot.getVie(); i++) {
+					panel.add(new JLabel(new ImageIcon("Images/vie.gif"),SwingConstants.LEFT));
+				}
+			
+		panel.add(new JLabel("           Checkpoints validés : "));
+			if(hisBot != null)
+				for(int i = 0; i < hisBot.getOrdre(); i++) {
+					panel.add(new JLabel(new ImageIcon("Images/validé.gif"),SwingConstants.LEFT));
+				}
+		
+		if (hisBot != null && hisBot.getVie()>0) {				
+			if (bruitageCase == true) {
+				try {
+					if(plateau.caseEnIJ(hisBot.getX(), hisBot.getY()) instanceof CaseCheckpoint)
+						GraphicWindow.this.musique("Sons/checkpoint.wav");
+					else
+						GraphicWindow.this.musique("Sons/deplacement.wav");
+				} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
+					e1.printStackTrace();
+				}
+				bruitageCase = false;
+			}
+		}	
+		return panel;
+	}
+	
+	private void gagner() {
+		try {
+			GraphicWindow.this.musique("Sons/gagner.wav");
+		} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
+			e1.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(GraphicWindow.this,
+			    "Félicitations, votre mission est reussie !\n"
+			    + "Vous avez gagné, mais à un détail près, vous auriez pu perdre.\n"
+			    + "Quelle chance, et quel talent !",
+			    "Fin de partie : Vous avez pu sauver l'humanité",
+			    JOptionPane.INFORMATION_MESSAGE,
+			    new ImageIcon("Images/gagner.png") );
+		bruitages = false;
+	}
+	
+	private void mourir() {
+		try {
+			GraphicWindow.this.musique("Sons/mourir.wav");
+		} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
+			e1.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(GraphicWindow.this,
+			    "Mission échouée...\n"
+			    + "Votre robot est détruit, malheureusement il est impossible de le réanimer.",
+			    "Fin de partie : Vous n'avez pas pu sauver l'humanité",
+			    JOptionPane.INFORMATION_MESSAGE,
+			    new ImageIcon("Images/mourir.png") );
+		bruitages = false;
+	}
+	
 	private JPanel creationPlateau() throws IOException {
 		
 		JPanel jpanel = new JPanel(new GridLayout(10,10,0,0));
@@ -162,18 +200,18 @@ public class GraphicWindow extends JFrame {
 		for (int i=0; i < 10 ;i++) {
 			for (int j=0; j < 10 ;j++) {
 					
-					Case caseIJ = plateau.caseEnIJ(i, j);					
+					Case caseIJ = plateau.caseEnIJ(i, j);
 					BufferedImage imgCase = ImageIO.read(new File("Images/Cases/"+caseIJ.getNom()+".png"));
-					
-					if (caseIJ instanceof CaseTapisRoulant) {
-						imgCase = ImageIO.read(new File("Images/Cases/"+caseIJ.getNom()+
-								((CaseTapisRoulant)caseIJ).getO()+".png"));
-					}
 					
 					for (int k = 0; k < listeDesBots.size(); k++) {
 						if(i == listeDesBots.get(k).getX() && j == listeDesBots.get(k).getY() ) {
-					    	BufferedImage imgBot = ImageIO.read(new File("Images/bot.png"));
-					    	
+							
+							BufferedImage imgBot; 
+							if(hisBot != null && i == hisBot.getX() && j == hisBot.getY())
+								imgBot = ImageIO.read(new File("Images/Bot/his"+listeDesBots.get(k).getNom()+".png"));
+							else
+								imgBot = ImageIO.read(new File("Images/Bot/"+listeDesBots.get(k).getNom()+".png"));
+					    		
 						    int w = Math.max(imgCase.getWidth(), imgBot.getWidth());
 						    int h = Math.max(imgCase.getHeight(), imgBot.getHeight());
 						    BufferedImage imgCaseEtBot = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
@@ -203,21 +241,21 @@ public class GraphicWindow extends JFrame {
 			for (int i=0; i < listeDesCartes.size() ;i++) {
 				Carte carteI = listeDesCartes.get(i);
 				
-				String vitesse = " ";
+				String vitesseOrientation = " ";
 				if(carteI instanceof CarteD) {
 					CarteD carteD = (CarteD) carteI;
-					vitesse = carteD.getDeplacement()<0 ? 
+					vitesseOrientation = carteD.getDeplacement()<0 ? 
 							"RECULER ("+String.valueOf(carteD.getVitesse())+")":
 							"AVANCER ("+String.valueOf(carteD.getVitesse())+")";	
 				}
 				else if(carteI instanceof CarteO) {
 					CarteO carteO = (CarteO) carteI;
-					vitesse = "TOURNER "+String.valueOf(carteO.getO()).toUpperCase();
+					vitesseOrientation = "TOURNER "+String.valueOf(carteO.getO()).toUpperCase();
 				}
-				JButton bouton = new JButton(vitesse, new ImageIcon("Images/Cartes/"+carteI.getNom()+".png"));
+				JButton bouton = new JButton(vitesseOrientation, new ImageIcon("Images/Cartes/"+carteI.getNom()+".png"));
 				bouton.setVerticalTextPosition(SwingConstants.BOTTOM);
 				bouton.setHorizontalTextPosition(SwingConstants.CENTER);
-				
+
 				bouton.addActionListener(new ActionListener() {
 					
 					public void actionPerformed(ActionEvent e) {
@@ -300,7 +338,7 @@ public class GraphicWindow extends JFrame {
 						    + "Source : Wikipédia RoboRally.", 
 						    "Comprendre le But du jeu",
 						    JOptionPane.INFORMATION_MESSAGE,
-						    new ImageIcon("Images/bot.png") );
+						    new ImageIcon("Images/Bot/bot.png") );
 				}
 			} );
 			regles.add(jeu);
@@ -334,11 +372,10 @@ public class GraphicWindow extends JFrame {
 			JMenuItem cases = new JMenuItem("Les différents types de Cases");
 				cases.addActionListener(e->{
 					String[] choix={"Passer à la case suivante","Quitter"};
-					Case[] diffCases = {new CaseNormale(), new CaseTrou(), new CaseBroyeur(), new CaseCheckpoint(10), new CaseLaser(), new CaseMur(), new CaseTapisRoulant(Orientation.gauche)};
+					Case[] diffCases = {new CaseNormale(), new CaseReparer(), new CaseTrou(), new CaseBroyeur(), new CaseCheckpoint(10), new CaseLaser(), new CaseMur(), new CaseTapisRoulant(Orientation.haut)};
 					for (int i = 0; i < diffCases.length; i++) {
 						int choixJoueur = JOptionPane.showOptionDialog(GraphicWindow.this, 
-			                    "Case "+ diffCases[i].getNom()+" :\n"
-			                    +"Votre Robot meurt avec de grosses souffrances.", 
+			                    diffCases[i].getDescription(), 
 			                    "Les différents types de Cases", 
 			                    JOptionPane.YES_NO_OPTION, 
 			                    JOptionPane.QUESTION_MESSAGE, 
@@ -361,7 +398,7 @@ public class GraphicWindow extends JFrame {
 					    + "de ce jeu créé en 2022 à l'université Paul Valéry.",
 					    "Le comité de création",
 					    JOptionPane.INFORMATION_MESSAGE,
-					    new ImageIcon("Images/bot.png") );
+					    new ImageIcon("Images/Bot/bot.png") );
 			});
 			credits.add(creation);
 			
@@ -374,7 +411,7 @@ public class GraphicWindow extends JFrame {
 					    "Les crédits des Musiques",
 					    JOptionPane.YES_NO_OPTION, 
 	                    JOptionPane.QUESTION_MESSAGE,
-					    new ImageIcon("Images/bot.png"), choix, choix[1]);
+					    new ImageIcon("Images/Bot/bot.png"), choix, choix[1]);
 				
 				if (0 == choixJoueur) {
 					try {
@@ -392,10 +429,11 @@ public class GraphicWindow extends JFrame {
 			images.addActionListener(e->{
 				JOptionPane.showMessageDialog(GraphicWindow.this,
 					    "Les images des cases, et celles du robot ont été intégralement réalisés par\n"
-					    + "Elie Cucurou–Ollier. Tandis que Thomas Ayrivié à réalisé celles des cartes.\n",
+					    + "Elie Cucurou–Ollier. Tandis que Thomas Ayrivié à réalisé celles des cartes.\n"
+					    + "Sans oublier Candice Déjean, réalisatrice du logo.",
 					    "Les crédits des Images",
 					    JOptionPane.INFORMATION_MESSAGE,
-					    new ImageIcon("Images/bot.png") );
+					    new ImageIcon("Images/Bot/bot.png") );
 			});
 			credits.add(images);
 
@@ -413,8 +451,40 @@ public class GraphicWindow extends JFrame {
 		}
 	}
 	
-	
 	public List<Carte> getListeDesCartesCliquees() {
 		return listeDesCartesCliquees;
+	}
+
+	public static void main(String[] args) throws Exception {
+		ArrayList<Bot> bot = new ArrayList<Bot>();
+		Bot a = new Bot(5,1);
+		a.setVie(15);
+		
+		bot.add(a);
+		bot.add(new Bot(2,4));
+		bot.add(new Bot(3,3));
+		
+		ArrayList<Bot> bot2 = new ArrayList<Bot>();
+		bot2.add(new Bot(3,3));
+		bot2.add(a);
+		a.setO(Orientation.gauche);
+		GraphicWindow window = new GraphicWindow(new Plateau(), bot,  a.getID());
+		window.setVisible(true);
+		
+			window.setListeDesBots(bot2);
+		
+		System.out.print(window.getListeDesCartesCliquees());
+
+	     int nombre = new Scanner(System.in).nextInt();
+	     System.out.print(window.getListeDesCartesCliquees());
+	     window.gagner();
+	     a.setX(0);
+	     a.setY(0);
+	     a.setOrdre(10);
+	     
+	     
+	     window.setListeDesBots(bot);
+	     window.setSetDeCartes(new SetDeCartes());
+	     System.out.println(window.getListeDesCartesCliquees());
 	}
 }
