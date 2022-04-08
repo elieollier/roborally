@@ -1,4 +1,4 @@
-public class CaseLaser implements Case {
+public class CaseLaser extends Case {
 	private String nom = "laser";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Laser.\n"
