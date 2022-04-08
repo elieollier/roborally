@@ -1,4 +1,4 @@
-public class CaseNormale implements Case{
+public class CaseNormale extends Case{
 	private String nom = "normale";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases normales.\n"
