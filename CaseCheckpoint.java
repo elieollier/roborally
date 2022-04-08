@@ -1,6 +1,5 @@
 public class CaseCheckpoint implements Case {
 	int ordre;
-	private String nom = "checkpoint";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Checkpoint.\n"
 			+ "Les cases Checkpoint sont les cases où votre robot doit aller dans\n"
@@ -12,7 +11,7 @@ public class CaseCheckpoint implements Case {
 	}
 	
 	public String getNom() {
-		return nom;
+		return "checkpoint"+String.valueOf(ordre);
 	}
 	
 	public  CaseCheckpoint( int ordre) {
