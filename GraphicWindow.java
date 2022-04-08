@@ -132,7 +132,7 @@ public class GraphicWindow extends JFrame {
 			bouton.setHorizontalTextPosition(SwingConstants.CENTER);
 			bouton.setContentAreaFilled(false);
 			bouton.setBorderPainted(false);
-		panel.add(bouton);
+		panel.add(bouton);		
 		
 		panel.add(new JLabel("           Copies de sauvegarde restantes : "));
 			if(hisBot != null)
@@ -146,7 +146,7 @@ public class GraphicWindow extends JFrame {
 					panel.add(new JLabel(new ImageIcon("Images/validé.gif"),SwingConstants.LEFT));
 				}
 		
-		if (hisBot != null && hisBot.getVie()>0) {				
+		if (hisBot != null && hisBot.getVie()>0) {
 			if (bruitageCase == true) {
 				try {
 					if(plateau.caseEnIJ(hisBot.getX(), hisBot.getY()) instanceof CaseCheckpoint)
@@ -372,7 +372,7 @@ public class GraphicWindow extends JFrame {
 			JMenuItem cases = new JMenuItem("Les différents types de Cases");
 				cases.addActionListener(e->{
 					String[] choix={"Passer à la case suivante","Quitter"};
-					Case[] diffCases = {new CaseNormale(), new CaseReparer(), new CaseTrou(), new CaseBroyeur(), new CaseCheckpoint(10), new CaseLaser(), new CaseMur(), new CaseTapisRoulant(Orientation.haut)};
+					Case[] diffCases = {new CaseNormale(), new CaseReparer(), new CaseTrou(), new CaseBroyeur(), new CaseCheckpoint(1), new CaseLaser(), new CaseMur(), new CaseTapisRoulant(Orientation.haut)};
 					for (int i = 0; i < diffCases.length; i++) {
 						int choixJoueur = JOptionPane.showOptionDialog(GraphicWindow.this, 
 			                    diffCases[i].getDescription(), 
@@ -477,7 +477,7 @@ public class GraphicWindow extends JFrame {
 
 	     int nombre = new Scanner(System.in).nextInt();
 	     System.out.print(window.getListeDesCartesCliquees());
-	     window.gagner();
+	     window.mourir();
 	     a.setX(0);
 	     a.setY(0);
 	     a.setOrdre(10);
