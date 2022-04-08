@@ -1,4 +1,4 @@
-public class CaseBroyeur implements Case {
+public class CaseBroyeur extends Case {
 	private String nom = "broyeur";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Broyeurs.\n"
