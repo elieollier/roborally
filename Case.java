@@ -1,4 +1,4 @@
-public interface Case {
+public abstract class Case {
 	public abstract String getNom();
 	
 	public abstract String getDescription();
