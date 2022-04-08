@@ -1,4 +1,4 @@
-public class CaseCheckpoint implements Case {
+public class CaseCheckpoint extends Case {
 	int ordre;
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Checkpoint.\n"
