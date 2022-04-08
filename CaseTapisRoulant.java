@@ -1,4 +1,4 @@
-public class CaseTapisRoulant implements Case {
+public class CaseTapisRoulant extends Case {
 	private Orientation o ;
 	private String description =
 			"Ci-contre vous trouverez l'image qui représente les cases Tapis roulant.\n"
