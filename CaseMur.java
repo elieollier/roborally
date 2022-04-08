@@ -1,4 +1,4 @@
-public class CaseMur implements Case{
+public class CaseMur extends Case{
 	private String nom = "murH";
 	private String description = 
 			"Ci-contre vous trouverez l'image qui représente les cases Mur.\n"
