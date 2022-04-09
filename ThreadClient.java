@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 
 import java.io.ObjectInputStream;
@@ -5,6 +6,7 @@ import java.io.ObjectOutputStream;
 
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ThreadClient extends Thread {
@@ -14,19 +16,17 @@ public class ThreadClient extends Thread {
 final Socket s ;
 ObjectInputStream in ;
 ObjectOutputStream out;
-
-Bot r;
+Bot r ;
 Plateau p;
-ArrayList <Bot> listeBots;
 
 	
-	public ThreadClient ( Socket s,ObjectOutputStream out,ObjectInputStream in, Bot r,ArrayList <Bot> listeBots, Plateau p) throws IOException {
+	public ThreadClient ( Socket s,ObjectOutputStream out,ObjectInputStream in, Bot r, Plateau p) throws IOException {
 		this.s = s;
 		this.out = out;
 		this.in = in;
 		this.r = r;
 		this.p = p;
-		this.listeBots = listeBots;
+		
 		
 		
 	}
@@ -37,21 +37,32 @@ public void run() {
 	try {
 		
 		
-	while( true) {
 		
-		// On reçoit les cartes jouées et on activent leurs effets. 
-        List <Carte> cartesJouees  =  (List <Carte>) in.readObject();
-        System.out.println(cartesJouees);
-    
-        System.out.println(r.getX());
-        for (int i =0 ; i < cartesJouees.size(); i++) {
-        	cartesJouees.get(i).effet(r);
-        	p.caseEnIJ(r.getX(),r.getY()).effet(r);
-        }
-        System.out.println(r.getX());
+		Serveur.listeBot.add(r);
+		Serveur.partager(Serveur.listeBot);
+		
+	while( true ) {
+		
+
         
+        
+   Bot robotClient  = (Bot) in.readObject();
+  
+   int indice = -1;
+        	
+    for (int i = 0 ; i < Serveur.listeBot.size() ; i++) {
+    if(  Serveur.listeBot.get(i).getID().equals(robotClient.getID())) {
+   indice = i;
+   break;
+    }
+    Serveur.listeBot.set(indice, robotClient);
     
-        Serveur.partager(listeBots);
+    }
+    	
+    
+     
+    
+        Serveur.partager(Serveur.listeBot);
         
 	}
 		
@@ -64,4 +75,5 @@ public void run() {
 }
 	
 }
+
 
