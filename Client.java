@@ -1,5 +1,3 @@
-
-
 import java.io.DataInputStream;
 
 
@@ -16,29 +14,48 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Client
+public class Client1 
 {
 	
+	
+	
 
+	
  
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	
     public static void main(String[] args) throws Exception 
     {
     
     	
 
-        Plateau plateauClient   = new Plateau();
-        Bot robotClient   = new  Bot(plateauClient );
-         System.out.println(robotClient.getID());
-        ArrayList  <Bot> robotsAutresJoueurs =  new ArrayList <Bot>() ;
-        SetDeCartes cartesClient = new SetDeCartes();
-       
-       
         
+
+   	 Plateau plateauClient   = new Plateau();
+         Bot robotClient   = new  Bot( plateauClient );
+        ArrayList  <Bot> robotsPartie =  new ArrayList <Bot>() ;
+          SetDeCartes cartesClient = new SetDeCartes();
+
+       
+
+    	
+        
+     
 
     	      
     try  {
         
+    	
+    	
+           
+
               
             
             InetAddress ip = InetAddress.getByName("localhost");
@@ -50,52 +67,73 @@ public class Client
             
             ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
             ObjectInputStream in   = new ObjectInputStream(s.getInputStream());
-            
-            
             out.writeObject(robotClient);
             out.writeObject(plateauClient);
-            robotsAutresJoueurs  = ( ArrayList <Bot> ) in.readObject();	
-            
-            for (int i =0 ; i < robotsAutresJoueurs.size() ; i++ ) {
-            System.out.println( robotsAutresJoueurs.get(i).getID());
-            }
-            
-       
-       	 GraphicWindow fenetreJoueur  = new GraphicWindow(plateauClient,robotsAutresJoueurs,robotClient.getID());
-       	 fenetreJoueur.setVisible(true);
-//       	 
-       	
-   
-     
-     
-      // 	while (robotClient.getVie() > 0  )    {
-       		
-       		
-       		fenetreJoueur.setSetDeCartes(new SetDeCartes());
-        	          	
-            while(fenetreJoueur.getListeDesCartesCliquees().size() != 5) {
-           	 System.out.println(fenetreJoueur.getListeDesCartesCliquees().size());
-           	 
-            }
-            
-            
-            System.out.println(fenetreJoueur.getListeDesCartesCliquees());
-            
-            out.writeObject(fenetreJoueur.getListeDesCartesCliquees());
-            fenetreJoueur.setListeDesBots(( ArrayList <Bot> ) in.readObject());
-            
             
             
            
-
-         
+       
+           robotsPartie  = (ArrayList <Bot>) in.readObject();
+           System.out.println(robotsPartie);
+       	 GraphicWindow fenetreJoueur  = new GraphicWindow(plateauClient,robotsPartie,robotClient.getID());
+       	 fenetreJoueur.setSetDeCartes(cartesClient);
+       	
+       	 fenetreJoueur.setVisible(true);      	 
+       	
      
-        
-         
-         
-            	//  }  ;
+      while (robotClient.getVie() > 0  || robotClient.getOrdre() < 3 )    {
+       		
+       		
+       		
+        	          	
+            while(fenetreJoueur.getListeDesCartesCliquees().size() != 5) {
+           	 System.out.println(fenetreJoueur.getListeDesCartesCliquees().size());
+           	
+            }
+            System.out.println(fenetreJoueur.getListeDesCartesCliquees());
             
+            
+        
+       ArrayList <Carte> cartesJouees = (ArrayList<Carte>) fenetreJoueur.getListeDesCartesCliquees();
 
+            Iterator <Carte> it = cartesJouees.iterator();
+       
+            
+            robotsPartie.remove(robotClient);
+            
+             while( it.hasNext()) {
+              Carte carteUtilise = it.next();
+          
+          	   carteUtilise.effet(robotClient);
+          	   plateauClient.caseEnIJ(robotClient.getX(), robotClient.getY()).effet(robotClient);
+          	
+          	   
+             }
+            
+             robotsPartie.add(robotClient);
+             
+             
+             
+             out.writeObject(robotClient);
+             
+            robotsPartie = (ArrayList <Bot>) in.readObject();
+            
+            fenetreJoueur.setListeDesBots(robotsPartie);
+            
+            fenetreJoueur.setSetDeCartes(new SetDeCartes());        
+            
+            
+            
+            
+            
+            
+            }  
+      
+      
+      
+      
+      
+  
             
             
             
@@ -119,5 +157,3 @@ public class Client
     }
     
 }
-    
-    
