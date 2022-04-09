@@ -1,20 +1,3 @@
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Random;
-import java.util.Scanner;
-public class Serveur 
 
 import java.io.DataInputStream;
 
@@ -40,7 +23,8 @@ public class Serveur
 		 static ArrayList<Bot>  listeBot = new  ArrayList<> ();
 		 static ArrayList< ObjectOutputStream>  fluxsortants  = new ArrayList< ObjectOutputStream>();
 		 public static final int PORT = 5056;
-		
+		static int nombreJoueurs = 2;
+		// on crée autant de classe client qu'il n'y a de joueurs.
 		  
 		 
 		 public static boolean botDansLaCase(int x, int y) {
@@ -98,7 +82,7 @@ public class Serveur
 	                // Le serveur attend la connexion d'un client. 	            	
 	              
 	                  
-	                while( listeBot.size() != 1) {
+	                while( listeBot.size() != nombreJoueurs) {
 	                	
 	                 	  client = serveur.accept();
 
@@ -109,12 +93,11 @@ public class Serveur
 	   	                
 	                    Bot robotClient  =  (Bot) in.readObject();
 	   	                Plateau plateauClient   = (Plateau) in.readObject();
-	   	                listeBot.add( robotClient);
 	   	                System.out.println(robotClient.getID());
 	   	                fluxsortants.add(out);
 	   	             
 	   	             // On affecte le thread au client qui vient de se connecter. 
-	   	             Thread t  = new ThreadClient(client,out,in  , robotClient ,listeBot, plateauClient);
+	   	             Thread t  = new ThreadClient(client,out,in,robotClient , plateauClient);
 		              t.start();
 		              System.out.println("Un nouveau thread est assigné.");
 	   	               
@@ -124,17 +107,18 @@ public class Serveur
 	             
 	  
 	             
-	              
-	                Serveur.partager(listeBot);
+	            
 	                
+	                
+	                Serveur.partager(listeBot);   
 	               
 	               
 	                
-	         
+	   
 	                }
 	               
 	           
-	                   
+	            	  
 	                
 	                          
 	              
@@ -158,5 +142,3 @@ public class Serveur
 	}
 	    
 	}
-
-
