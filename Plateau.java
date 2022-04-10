@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Plateaufabi {
+public class Plateau {
     private static int taille = 10;
     private Case cases[][] = new Case[taille][taille];
         
     
-     public Plateaufabi() {
+     public Plateau() {
           for (int  i = 0 ; i < cases.length; i++) {
               for(int j = 0; j < Plateaufabi.taille; j++ ) {
                   cases[i][j] = new CaseNormale();
