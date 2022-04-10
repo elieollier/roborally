@@ -123,7 +123,11 @@ public class Client2
             fenetreJoueur.setSetDeCartes(new SetDeCartes());        
             
             
-            
+                     if(robotClient.getVie() < 0) {
+                fenetreJoueur.mourir();}
+
+  else if (robotClient.getOrdre() == 3) {
+                fenetreJoueur.gagner();}
             
             
             
