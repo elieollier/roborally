@@ -1,18 +1,48 @@
+package Projet;
+
+import java.io.Serializable;
 import java.util.Random;
 
-public class Bot {
-	private int x,y,xCheck,yCheck;
-	private int ordre = 0;
+public class Bot implements Serializable {
+
+private int x,y,xCheck,yCheck;
+	private int ordre= 0;
 	private int vie= 3;
 	private final String ID;
-	private Orientation o  = Orientation.haut;
+	private Orientation o ;
+	
+	 static   Orientation  orientations [] =  new  Orientation[4];
+	 
+	
+	
+	    public static  void remplissage0() {
 
-	public Bot(int x, int y) {
-		xCheck=x;
-		yCheck=y;
-		setX(x);
-		setY(y);
-		ID = String.valueOf(new Random().nextInt()*1000);
+	    	   orientations[0] = Orientation.haut;
+	    	   orientations[1] = Orientation.bas;
+	    	   orientations[2] = Orientation.droite;
+	    	   orientations[3] = Orientation.gauche;
+	    	   
+	    }
+    
+	  
+	public Bot(Plateau p) {
+		Bot.remplissage0();
+		
+	    setX(new Random().nextInt(10));
+		setY(new Random().nextInt(10));
+		setxCheck(x);
+		setyCheck(y);
+		this.o = orientations [new Random().nextInt(4)];
+		
+		
+		while( !( p.caseEnIJ(x, y)  instanceof CaseNormale) ) {
+	    setX(new Random().nextInt(10));
+		setY(new Random().nextInt(10));
+		setxCheck(x);
+		setyCheck(y);
+		}
+
+		ID = String.valueOf(new Random().nextInt() * 1000);
 	}
 
 	public void deplacement() {
@@ -33,7 +63,7 @@ public class Bot {
 		}
 		
 		// si le robot sort de la matrice théorique, il meurt...
-		if(x<0 || x > Plateau.getTaille()-1 || y<0 || y > Plateau.getTaille()-1 
+		if(x<0 || x > 9 || y<0 || y > 9
 				&& x != -1 && y != -1) {
 			mourir();
 		}
@@ -61,19 +91,14 @@ public class Bot {
 				setY(getY() + 1);
 				break;
 		}
-		
-		// si le robot sort de la matrice théorique, il meurt...
-		if(x<0 || x > Plateau.getTaille()-1 || y<0 || y > Plateau.getTaille()-1 
-				&& x != -1 && y != -1) {
-			mourir();
-		}
-		
-		// deux robots ne peuvent pas etre sur la même case	
-		if(Serveur.botDansLaCase(x, y) && x != -1 && y != -1) {
-			deplacementInverse();
-		}
 	}
 	
+	
+
+    
+
+    
+    
 
 	public void laser() {
 		if(o == Orientation.haut || o == Orientation.bas) {
@@ -95,11 +120,16 @@ public class Bot {
 			setY(-1);
 		}
 	}
+
+	
+	
 	
 	public String getNom() {
-		return "bot"+String.valueOf(o);
+	return "Bot" + String.valueOf(o);
 	}
-
+	
+	
+	
 	public int getVie() {
 		return vie;
 	}
@@ -159,5 +189,7 @@ public class Bot {
 	public String getID() {
 		return ID;
 	}
+
+	
 	
 }
