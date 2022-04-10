@@ -1,3 +1,4 @@
+package Projet;
 
 import java.io.IOException;
 
@@ -39,7 +40,7 @@ public void run() {
 		
 		
 		Serveur.listeBot.add(r);
-		Serveur.partager(Serveur.listeBot);
+	 Serveur.partager(Serveur.listeBot);
 		
 	while( true ) {
 		
@@ -54,7 +55,9 @@ public void run() {
     if(  Serveur.listeBot.get(i).getID().equals(robotClient.getID())) {
    indice = i;
    break;
-    }
+    }}
+    
+    if( indice != -1) {
     Serveur.listeBot.set(indice, robotClient);
     
     }
@@ -75,5 +78,3 @@ public void run() {
 }
 	
 }
-
-
