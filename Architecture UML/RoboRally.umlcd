@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_YGa2MLjdEey1RPzT2cry-g">
+  <modelElement href="RoboRally.uml#_YmVFULjdEey1RPzT2cry-g"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZCF0QLjdEey1RPzT2cry-g" sourceAnchor="166.0,0.0" targetAnchor="131.0,136.0" superClass="_ZCAUsLjdEey1RPzT2cry-g" subClass="_ZCI3kLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YulpcLjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmYNFLjdEey1RPzT2cry-g" sourceY="-189" targetX="869" targetY="28"/>
+    <bendpoints xmi:id="_ZmYNFbjdEey1RPzT2cry-g" sourceX="-869" sourceY="-189" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZC5FgLjdEey1RPzT2cry-g" sourceAnchor="395.0,0.0" targetAnchor="0.0,383.0" target="_ZCn_wLjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwmbobjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmY0IrjdEey1RPzT2cry-g" sourceY="-312" targetX="-479"/>
+    <stereotypes xmi:id="_ZC-lELjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Ywmbo7jdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZC8I0LjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmdFkLjdEey1RPzT2cry-g" position="-21.76838678822287,148.06159153291887"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZC9-ALjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwmborjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_Zmb3c7jdEey1RPzT2cry-g" position="-2.664878535374328,-91.76243733561498"/>
+      <visibility xmi:id="_ZDCPcbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDCPcLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZC9-AbjdEey1RPzT2cry-g" aggregationKind="NONE" name="hisBot" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv_XobjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmdsoLjdEey1RPzT2cry-g" position="-505.3643452384298,38.20017873888338"/>
+      <visibility xmi:id="_ZDCPc7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDCPcrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZC6ToLjdEey1RPzT2cry-g" sourceAnchor="0.0,308.0" targetAnchor="101.0,136.0" target="_ZCAUsLjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwmbpLjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmY0I7jdEey1RPzT2cry-g" sourceX="-936" targetY="1528"/>
+    <stereotypes xmi:id="_ZC_MIbjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwnCsLjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZC-lEbjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmeTsLjdEey1RPzT2cry-g" position="878.9329191964334,-20.235497362459682"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZC-lErjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwmbpbjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmdsobjdEey1RPzT2cry-g" position="-53.993164665440645,-42.655235302919436"/>
+      <visibility xmi:id="_ZDC2grjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDC2gbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZC_MILjdEey1RPzT2cry-g" aggregationKind="NONE" name="listeDesCartesCliquees" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv_Xo7jdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmeTsbjdEey1RPzT2cry-g" position="808.2172328574159,1485.0905949852895"/>
+      <visibility xmi:id="_ZDC2hLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDC2g7jdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDFSwLjdEey1RPzT2cry-g" sourceAnchor="605.0,0.0" targetAnchor="136.0,136.0" target="_ZEwGsLjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwlNgLjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZDFSwbjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Ywl0kLjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDFSwrjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_Zmfh0LjdEey1RPzT2cry-g" position="-32.69916058618821,-132.15001576316703"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZDFSw7jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwlNgbjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_Zme6wLjdEey1RPzT2cry-g" position="-19.22271982174709,-80.25511030039155"/>
+      <visibility xmi:id="_ZDFSxLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDFSxbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDFSxrjdEey1RPzT2cry-g" aggregationKind="NONE" name="plateau" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv-JgrjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmgI4LjdEey1RPzT2cry-g" position="-48.09781089808564,-213.18058594901348"/>
+      <visibility xmi:id="_ZDFSx7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDFSyLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDGg4LjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Ywl0kbjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZDGg4bjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwmboLjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDGg4rjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZDGg47jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_Ywl0krjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDGg5LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDGg5bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDGg5rjdEey1RPzT2cry-g" aggregationKind="NONE" name="listeDesBots" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv-JhLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDGg57jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDGg6LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDHH8LjdEey1RPzT2cry-g" sourceAnchor="0.0,278.0" targetAnchor="141.0,185.0" target="_ZEg2ILjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwnCsbjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmZbMLjdEey1RPzT2cry-g" sourceX="-468" targetY="333"/>
+    <stereotypes xmi:id="_ZDHH8bjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwnCs7jdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDHH8rjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmhXALjdEey1RPzT2cry-g" position="279.55502221953924,-22.30422338666955"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZDHH87jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwnCsrjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_Zmgv8LjdEey1RPzT2cry-g" position="-56.209829860385184,-43.468696587686"/>
+      <visibility xmi:id="_ZDHH9LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDHH9bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDHH9rjdEey1RPzT2cry-g" aggregationKind="NONE" name="listeDesCartes" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv_XprjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_Zmh-ELjdEey1RPzT2cry-g" position="129.4534158491985,289.5191091970971"/>
+      <visibility xmi:id="_ZDHH97jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDHH-LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDHvALjdEey1RPzT2cry-g" source="_ZDIWFrjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwnCtLjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZDHvAbjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwnpwLjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDHvArjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZDIWELjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwnCtbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWEbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWErjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDIWE7jdEey1RPzT2cry-g" aggregationKind="NONE" name="contentPane" navigable="true">
+      <modelElement href="RoboRally.uml#_Yv_-srjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWFLjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWFbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDwBILjdEey1RPzT2cry-g" source="_ZDzrgLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwnpxLjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZDx2ULjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwoQ0LjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDxPQLjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZDxPQbjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwnpxbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDydYbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDydYLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDxPQrjdEey1RPzT2cry-g" aggregationKind="NONE" name="listeBot" navigable="true">
+      <modelElement href="RoboRally.uml#_YwDCALjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDydY7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDydYrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZDwBIbjdEey1RPzT2cry-g" source="_ZDzrgLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwoQ0bjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZDx2VLjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwoQ07jdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZDx2UbjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZDx2UrjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwoQ0rjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDydZ7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDydZrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZDx2U7jdEey1RPzT2cry-g" aggregationKind="NONE" name="fluxsortants" navigable="true">
+      <modelElement href="RoboRally.uml#_YwDpEbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzEcLjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDydaLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZD5yILjdEey1RPzT2cry-g" sourceAnchor="811.0,0.0" targetAnchor="151.0,640.0" target="_ZCn_wLjdEey1RPzT2cry-g" source="_ZD_4wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwqGAbjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZD7AQLjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwqtELjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZD6ZMLjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmjMMLjdEey1RPzT2cry-g" position="-20.749670050834084,250.956928633997"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZD6ZMbjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwqGArjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmilILjdEey1RPzT2cry-g" position="-1.1869627078281155,-91.62767983656613"/>
+      <visibility xmi:id="_ZD7nUbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD7nULjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZD6ZMrjdEey1RPzT2cry-g" aggregationKind="NONE" name="r" navigable="true">
+      <modelElement href="RoboRally.uml#_YwGsYbjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmjzQLjdEey1RPzT2cry-g" position="-4.1311752990898185,553.9557693128074"/>
+      <visibility xmi:id="_ZD7nU7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD7nUrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZD7AQbjdEey1RPzT2cry-g" sourceAnchor="591.0,0.0" targetAnchor="273.0,68.0" target="_ZEwGsLjdEey1RPzT2cry-g" source="_ZD_4wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwqtEbjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmaCQbjdEey1RPzT2cry-g" sourceY="-757" targetX="63"/>
+    <stereotypes xmi:id="_ZD8OZLjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwrUILjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZD8OYbjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmlBYLjdEey1RPzT2cry-g" position="-16.947034212783365,687.6482805012594"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZD8OYrjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwqtErjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmkaULjdEey1RPzT2cry-g" position="1.4280943908308927,-88.83481193860132"/>
+      <visibility xmi:id="_ZD81cbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD81cLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZD8OY7jdEey1RPzT2cry-g" aggregationKind="NONE" name="p" navigable="true">
+      <modelElement href="RoboRally.uml#_YwGsY7jdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmlBYbjdEey1RPzT2cry-g" position="59.021596153384735,673.5727066624207"/>
+      <visibility xmi:id="_ZD81c7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD81crjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZD9cgLjdEey1RPzT2cry-g" source="_ZD_4wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Ywo34LjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZD9cgbjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Ywo34rjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZD9cgrjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZD9cg7jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_Ywo34bjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD9chLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD9chbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZD9chrjdEey1RPzT2cry-g" aggregationKind="NONE" name="s" navigable="true">
+      <modelElement href="RoboRally.uml#_YwFeQbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD9ch7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD9ciLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZD-qoLjdEey1RPzT2cry-g" source="_ZD_4wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Ywo347jdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZD-qobjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Ywo35bjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZD-qorjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZD-qo7jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_Ywo35LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD-qpLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD-qpbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZD-qprjdEey1RPzT2cry-g" aggregationKind="NONE" name="in" navigable="true">
+      <modelElement href="RoboRally.uml#_YwGFUbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD-qp7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD-qqLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZD_RsLjdEey1RPzT2cry-g" source="_ZD_4wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Ywpe8LjdEey1RPzT2cry-g"/>
+    <stereotypes xmi:id="_ZD_RsbjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwqGALjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZD_RsrjdEey1RPzT2cry-g" text=""/>
+    <sourceRole xmi:id="_ZD_Rs7jdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_Ywpe8bjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD_RtLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD_RtbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZD_RtrjdEey1RPzT2cry-g" aggregationKind="NONE" name="out" navigable="true">
+      <modelElement href="RoboRally.uml#_YwGFU7jdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD_Rt7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_RuLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEVP8LjdEey1RPzT2cry-g" sourceAnchor="156.0,0.0" targetAnchor="131.0,136.0" superClass="_ZCAUsLjdEey1RPzT2cry-g" subClass="_ZEXFILjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YuneorjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmapUrjdEey1RPzT2cry-g" sourceY="-27" targetX="464" targetY="28"/>
+    <bendpoints xmi:id="_ZmapU7jdEey1RPzT2cry-g" sourceX="-464" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZEeZ4LjdEey1RPzT2cry-g" sourceAnchor="0.0,92.0" targetAnchor="161.0,136.0" target="_ZCAUsLjdEey1RPzT2cry-g" source="_ZEg2ILjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwoQ1LjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmapVrjdEey1RPzT2cry-g" sourceX="-267" targetY="1072"/>
+    <stereotypes xmi:id="_ZEfA87jdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YwoQ1rjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZEfA8LjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_Zmm2kLjdEey1RPzT2cry-g" position="110.13845076618384,-5.427970105539345"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZEfA8bjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwoQ1bjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmlocLjdEey1RPzT2cry-g" position="-62.02262624570022,-21.615950704899348"/>
+      <visibility xmi:id="_ZEfoAbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEfoALjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZEfA8rjdEey1RPzT2cry-g" aggregationKind="NONE" name="deck" navigable="true">
+      <modelElement href="RoboRally.uml#_YwE3MbjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_Zmm2kbjdEey1RPzT2cry-g" position="31.95769316941346,1051.3423352361008"/>
+      <visibility xmi:id="_ZEgPEbjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZEgPELjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEm8wLjdEey1RPzT2cry-g" sourceAnchor="214.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZEGmcLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yuqh8LjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmapULjdEey1RPzT2cry-g" sourceY="-27" targetX="413" targetY="28"/>
+    <bendpoints xmi:id="_ZmapUbjdEey1RPzT2cry-g" sourceX="-413" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEnj0LjdEey1RPzT2cry-g" sourceAnchor="214.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZDneQLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YurJArjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmZbMbjdEey1RPzT2cry-g" sourceY="-139" targetX="-91" targetY="28"/>
+    <bendpoints xmi:id="_ZmaCQLjdEey1RPzT2cry-g" sourceX="91" sourceY="-139" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEnj0bjdEey1RPzT2cry-g" sourceAnchor="428.0,82.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZBzgYLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YutlQbjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmW-8LjdEey1RPzT2cry-g" sourceX="124" targetX="-320" targetY="535"/>
+    <bendpoints xmi:id="_ZmXmALjdEey1RPzT2cry-g" sourceX="124" sourceY="-507" targetX="-320" targetY="28"/>
+    <bendpoints xmi:id="_ZmYNELjdEey1RPzT2cry-g" sourceX="444" sourceY="-507" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEnj0rjdEey1RPzT2cry-g" sourceAnchor="0.0,68.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZB7cMLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YuuzYLjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmYNEbjdEey1RPzT2cry-g" sourceX="-1030" targetX="-1886" targetY="769"/>
+    <bendpoints xmi:id="_ZmYNErjdEey1RPzT2cry-g" sourceX="-1030" sourceY="-741" targetX="-1886" targetY="28"/>
+    <bendpoints xmi:id="_ZmYNE7jdEey1RPzT2cry-g" sourceX="856" sourceY="-741" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEnj07jdEey1RPzT2cry-g" sourceAnchor="237.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZCe10LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YuwBgLjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmY0ILjdEey1RPzT2cry-g" sourceY="-89" targetX="-642" targetY="28"/>
+    <bendpoints xmi:id="_ZmY0IbjdEey1RPzT2cry-g" sourceX="642" sourceY="-89" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZEnj1LjdEey1RPzT2cry-g" sourceAnchor="214.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZEbWkLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YuwokrjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmapVLjdEey1RPzT2cry-g" sourceY="-139" targetX="901" targetY="28"/>
+    <bendpoints xmi:id="_ZmapVbjdEey1RPzT2cry-g" sourceX="-901" sourceY="-139" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ZEoK4LjdEey1RPzT2cry-g" sourceAnchor="136.0,0.0" targetAnchor="0.0,65.0" target="_ZErOMLjdEey1RPzT2cry-g" source="_ZEwGsLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YwnpwbjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmbQYLjdEey1RPzT2cry-g" sourceY="-181" targetX="-503" targetY="968"/>
+    <bendpoints xmi:id="_ZmbQYbjdEey1RPzT2cry-g" sourceX="-1289" sourceY="-181" targetX="-1792" targetY="968"/>
+    <bendpoints xmi:id="_ZmbQYrjdEey1RPzT2cry-g" sourceX="-1289" sourceY="-1149" targetX="-1792"/>
+    <stereotypes xmi:id="_ZEqAE7jdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Ywnpw7jdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ZEqAELjdEey1RPzT2cry-g" text="">
+      <visualProperties xmi:id="_ZmoEsLjdEey1RPzT2cry-g" position="1273.410139129728,85.99233178891814"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ZEqAEbjdEey1RPzT2cry-g" aggregationKind="NONE" name="">
+      <modelElement href="RoboRally.uml#_YwnpwrjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmndoLjdEey1RPzT2cry-g" position="2.6504896678374052,-77.41176983637239"/>
+      <visibility xmi:id="_ZEqnIbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEqnILjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ZEqAErjdEey1RPzT2cry-g" aggregationKind="NONE" name="cases" navigable="true">
+      <modelElement href="RoboRally.uml#_YwCa8bjdEey1RPzT2cry-g"/>
+      <visualProperties xmi:id="_ZmoEsbjdEey1RPzT2cry-g" position="-522.0385948086014,990.7889407943248"/>
+      <stereotypes xmi:id="_ZEqnJLjdEey1RPzT2cry-g" name="Array">
+        <modelElement href="RoboRally.uml#_YwCa87jdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZEqnJbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwCa9bjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZEqnI7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZEqnIrjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZE0_MLjdEey1RPzT2cry-g" sourceAnchor="214.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZE2NULjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YusXILjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_ZmbQY7jdEey1RPzT2cry-g" sourceY="-139" targetX="1402" targetY="28"/>
+    <bendpoints xmi:id="_Zmb3cLjdEey1RPzT2cry-g" sourceX="-1402" sourceY="-139" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ZE53sLjdEey1RPzT2cry-g" sourceAnchor="214.0,0.0" targetAnchor="124.0,129.0" superClass="_ZErOMLjdEey1RPzT2cry-g" subClass="_ZE7s4LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YupT0LjdEey1RPzT2cry-g"/>
+    <bendpoints xmi:id="_Zmb3cbjdEey1RPzT2cry-g" sourceY="-139" targetX="1892" targetY="28"/>
+    <bendpoints xmi:id="_Zmb3crjdEey1RPzT2cry-g" sourceX="-1892" sourceY="-139" targetY="28"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZAkxULjdEey1RPzT2cry-g" name="Client1">
+    <modelElement href="RoboRally.uml#_YoWekLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZAkxUbjdEey1RPzT2cry-g" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZAlYYLjdEey1RPzT2cry-g" label="+"/>
+    <operations xmi:id="_ZAlYYbjdEey1RPzT2cry-g" name="main" staticOperation="true">
+      <modelElement href="RoboRally.uml#_YoXssLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZAlYYrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZAlYY7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZAlYZLjdEey1RPzT2cry-g" name="args">
+        <modelElement href="RoboRally.uml#_YoXssbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZAlYZbjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_ZAlYZrjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZBtZwLjdEey1RPzT2cry-g" name="Exception">
+    <modelElement href="RoboRally.uml#_Yvj50bjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZBtZwbjdEey1RPzT2cry-g" position="88.0,692.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_ZBtZwrjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Yvkg4LjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <visibility xmi:id="_ZBtZw7jdEey1RPzT2cry-g" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZBzgYLjdEey1RPzT2cry-g" name="CaseNormale" generalizations="_ZEnj0bjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoMGgLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZBzgYbjdEey1RPzT2cry-g" position="620.0,-623.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZBzgYrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZBzgY7jdEey1RPzT2cry-g" defaultValue="&quot;normale&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv8UUrjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZBzgZLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZBzgZbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZBzgZrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZBzgZ7jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases normales.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Normales sont des cases où votre robot ne risque rien\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;pour sa vie, il peut donc y aller en toute tranquillité.&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv8UVLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZBzgaLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZBzgabjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZBzgarjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZBzga7jdEey1RPzT2cry-g" name="CaseNormale">
+      <modelElement href="RoboRally.uml#_YoMtkLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZBzgbLjdEey1RPzT2cry-g" keyword="create"/>
+      <stereotypes xmi:id="_ZBzgbbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YoNUorjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZBzgbrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZBzgb7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZBzgcLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoNUo7jdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZBzgcbjdEey1RPzT2cry-g" name="CaseNormale">
+          <modelElement href="RoboRally.uml#_YoMGgLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZBzgcrjdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_Yus-MLjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZBzgc7jdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YutlQLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZBzgdLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZBzgdbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZBzgdrjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_Yus-MbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZBzgd7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZBzgeLjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZB7cMLjdEey1RPzT2cry-g" name="CaseReparer" generalizations="_ZEnj0rjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoPJ0LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZB7cMbjdEey1RPzT2cry-g" position="636.0,-375.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZB7cMrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZB7cM7jdEey1RPzT2cry-g" defaultValue="&quot;reparer&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv87YLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZB7cNLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZB7cNbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZB7cNrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZB7cN7jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l’image qui représente les cases de Réparation.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases de Réparation, sont des cases qui réparent un des dégâts que\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;votre robot a subi, donc il peut y aller en toute tranquillité.&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv87YrjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZB7cOLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZB7cObjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZB7cOrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZB7cO7jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YuuMULjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZB7cPLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZB7cPbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZB7cPrjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuuMUbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZB7cP7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZB7cQLjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZCAUsLjdEey1RPzT2cry-g" name="Carte" abstractClass="true" associationsIn="_ZC6ToLjdEey1RPzT2cry-g _ZEeZ4LjdEey1RPzT2cry-g" subclassedBy="_ZCF0QLjdEey1RPzT2cry-g _ZEVP8LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YnxPwLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZCAUsbjdEey1RPzT2cry-g" position="-777.0,-1156.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZCAUsrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZCAUs7jdEey1RPzT2cry-g" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_Yv3b0LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCAUtLjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZCAUtbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCAUtrjdEey1RPzT2cry-g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZCAUt7jdEey1RPzT2cry-g" abstractOperation="true" name="getNom">
+      <modelElement href="RoboRally.uml#_Ynyd4LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCAUuLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCAUubjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCAUurjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Ynyd4bjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCAUu7jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCAUvLjdEey1RPzT2cry-g" abstractOperation="true" name="effet">
+      <modelElement href="RoboRally.uml#_Yuj0QLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCAUvbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCAUvrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCAUv7jdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_Yuj0QbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCAUwLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCAUwbjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZCI3kLjdEey1RPzT2cry-g" name="CarteD" generalizations="_ZCF0QLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yn0TELjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZCI3kbjdEey1RPzT2cry-g" position="57.0,-803.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZCI3krjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZCI3k7jdEey1RPzT2cry-g" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_Yv4C4LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCI3lLjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZCI3lbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCI3lrjdEey1RPzT2cry-g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCI3l7jdEey1RPzT2cry-g" name="nom">
+      <modelElement href="RoboRally.uml#_Yv4C4rjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCI3mLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3mbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCI3mrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCI3m7jdEey1RPzT2cry-g" name="deplacement">
+      <modelElement href="RoboRally.uml#_Yv4p8LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCI3nLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3nbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCI3nrjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCI3n7jdEey1RPzT2cry-g" name="vitesse">
+      <modelElement href="RoboRally.uml#_Yv4p8bjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCI3oLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3objdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCI3orjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZCI3o7jdEey1RPzT2cry-g" name="CarteD">
+      <modelElement href="RoboRally.uml#_Yn2IQLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZCI3pLjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZCI3pbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3prjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCI3p7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yn2IRLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCI3qLjdEey1RPzT2cry-g" name="CarteD">
+          <modelElement href="RoboRally.uml#_Yn0TELjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZCI3qbjdEey1RPzT2cry-g" name="deplacement">
+        <modelElement href="RoboRally.uml#_Yn2IQbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCI3qrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCI3q7jdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCI3rLjdEey1RPzT2cry-g" name="toString">
+      <modelElement href="RoboRally.uml#_Yn2vULjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCI3rbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yn39cLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZCI3rrjdEey1RPzT2cry-g" name="Annotations">
+        <modelElement href="RoboRally.uml#_Yn5LkLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCI3r7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3sLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCI3sbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yn3WYLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCI3srjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCI3s7jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YulCYLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCI3tLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCI3tbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCI3trjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YulCYbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCI3t7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCI3uLjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZCe10LjdEey1RPzT2cry-g" name="CaseTapisRoulant" generalizations="_ZEnj07jdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoQX8LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZCe10bjdEey1RPzT2cry-g" position="613.0,-959.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZCe10rjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZCe107jdEey1RPzT2cry-g" name="o">
+      <modelElement href="RoboRally.uml#_Yv87ZLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCe11LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCe11bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCe11rjdEey1RPzT2cry-g" name="Orientation">
+        <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCe117jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Tapis roulant.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Tapis roulants, vous permettent d'avancer d'une case suivant\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;le sens du tapis tout en conservant l'orientation de votre robot, vous\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;pouvez donc les utiliser mais attention à où ils vont amener votre robot !&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv87ZbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCe12LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCe12bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCe12rjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZCe127jdEey1RPzT2cry-g" name="getNom">
+      <modelElement href="RoboRally.uml#_YoRmELjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCe13LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCe13bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCe13rjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoRmEbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCe137jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCe14LjdEey1RPzT2cry-g" name="CaseTapisRoulant">
+      <modelElement href="RoboRally.uml#_YuuzYbjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZCe14bjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZCe14rjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCe147jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCe15LjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YuvacrjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCe15bjdEey1RPzT2cry-g" name="CaseTapisRoulant">
+          <modelElement href="RoboRally.uml#_YoQX8LjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZCe15rjdEey1RPzT2cry-g" name="o">
+        <modelElement href="RoboRally.uml#_YuuzYrjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCe157jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCe16LjdEey1RPzT2cry-g" name="Orientation">
+          <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCe16bjdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_Yuvac7jdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCe16rjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCe167jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCe17LjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuvadLjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCe17bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCe17rjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZCn_wLjdEey1RPzT2cry-g" name="Bot" associationsIn="_ZC5FgLjdEey1RPzT2cry-g _ZD5yILjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZCn_wbjdEey1RPzT2cry-g" position="1134.0,-495.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZCn_wrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZCn_w7jdEey1RPzT2cry-g" name="x">
+      <modelElement href="RoboRally.uml#_YvyjULjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCn_xLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YvzKYLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZCn_xbjdEey1RPzT2cry-g" name="MultiDeclaration">
+        <modelElement href="RoboRally.uml#_YvzKYbjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCn_xrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_x7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_yLjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_ybjdEey1RPzT2cry-g" defaultValue="0" name="ordre">
+      <modelElement href="RoboRally.uml#_Yv0_kLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn_yrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_y7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_zLjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_zbjdEey1RPzT2cry-g" defaultValue="3" name="vie">
+      <modelElement href="RoboRally.uml#_Yv1moLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn_zrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_z7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_0LjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_0bjdEey1RPzT2cry-g" name="ID">
+      <modelElement href="RoboRally.uml#_Yv1morjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCn_0rjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv2NsLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCn_07jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZCn_1LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_1bjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_1rjdEey1RPzT2cry-g" defaultValue="Orientation.bas" name="o">
+      <modelElement href="RoboRally.uml#_Yv2NsbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn_17jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_2LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_2bjdEey1RPzT2cry-g" name="Orientation">
+        <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_2rjdEey1RPzT2cry-g" name="y">
+      <modelElement href="RoboRally.uml#_Ywd4wLjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCn_27jdEey1RPzT2cry-g" name="MultiDeclaration">
+        <modelElement href="RoboRally.uml#_Ywd4wbjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZCn_3LjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Ywd4wrjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCn_3bjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_3rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_37jdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_4LjdEey1RPzT2cry-g" name="xCheck">
+      <modelElement href="RoboRally.uml#_Ywef0LjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCn_4bjdEey1RPzT2cry-g" name="MultiDeclaration">
+        <modelElement href="RoboRally.uml#_Ywef0bjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZCn_4rjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Ywef0rjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCn_47jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_5LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_5bjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZCn_5rjdEey1RPzT2cry-g" name="yCheck">
+      <modelElement href="RoboRally.uml#_Ywef07jdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZCn_57jdEey1RPzT2cry-g" name="MultiDeclaration">
+        <modelElement href="RoboRally.uml#_Ywef1LjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZCn_6LjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Ywef1bjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZCn_6bjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_6rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZCn_67jdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZCn_7LjdEey1RPzT2cry-g" name="Bot">
+      <modelElement href="RoboRally.uml#_Ynm3sLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZCn_7bjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZCn_7rjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_77jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCn_8LjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YnoF0rjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCn_8bjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZCn_8rjdEey1RPzT2cry-g" name="x">
+        <modelElement href="RoboRally.uml#_Ynm3sbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCn_87jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCn_9LjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZCn_9bjdEey1RPzT2cry-g" name="y">
+        <modelElement href="RoboRally.uml#_Ynm3srjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCn_9rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCn_97jdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCn_-LjdEey1RPzT2cry-g" name="deplacement">
+      <modelElement href="RoboRally.uml#_Ynos4LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn_-bjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn_-rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZCn_-7jdEey1RPzT2cry-g" name="deplacementInverse">
+      <modelElement href="RoboRally.uml#_YnpT8LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn__LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCn__bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZCn__rjdEey1RPzT2cry-g" name="laser">
+      <modelElement href="RoboRally.uml#_Ynp7ALjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCn__7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAALjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZCoAAbjdEey1RPzT2cry-g" name="mourir">
+      <modelElement href="RoboRally.uml#_Ynp7AbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAArjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAA7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZCoABLjdEey1RPzT2cry-g" name="getNom">
+      <modelElement href="RoboRally.uml#_YnqiELjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoABbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoABrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCoAB7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YnrJILjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCoACLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCoACbjdEey1RPzT2cry-g" name="getxCheck">
+      <modelElement href="RoboRally.uml#_YnrJIbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoACrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAC7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCoADLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YnrJIrjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCoADbjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCoADrjdEey1RPzT2cry-g" name="setxCheck">
+      <modelElement href="RoboRally.uml#_YnrwMLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAD7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAELjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCoAEbjdEey1RPzT2cry-g" name="xCheck">
+        <modelElement href="RoboRally.uml#_YnrwMbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCoAErjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCoAE7jdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCoAFLjdEey1RPzT2cry-g" name="getyCheck">
+      <modelElement href="RoboRally.uml#_YnsXQLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAFbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAFrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCoAF7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YnsXQbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCoAGLjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCoAGbjdEey1RPzT2cry-g" name="setyCheck">
+      <modelElement href="RoboRally.uml#_Yns-ULjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAGrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAG7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCoAHLjdEey1RPzT2cry-g" name="yCheck">
+        <modelElement href="RoboRally.uml#_Yns-UbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCoAHbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCoAHrjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCoAH7jdEey1RPzT2cry-g" name="getY">
+      <modelElement href="RoboRally.uml#_YntlYLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAILjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAIbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCoAIrjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YntlYbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCoAI7jdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZCoAJLjdEey1RPzT2cry-g" name="setY">
+      <modelElement href="RoboRally.uml#_YnuMcLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAJbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoAJrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZCoAJ7jdEey1RPzT2cry-g" name="y">
+        <modelElement href="RoboRally.uml#_YnuMcbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZCoAKLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZCoAKbjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZCoAKrjdEey1RPzT2cry-g" name="getID">
+      <modelElement href="RoboRally.uml#_YnuzgLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZCoAK7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZCoALLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZCoALbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YnuzgbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZCoALrjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDIWFrjdEey1RPzT2cry-g" name="GraphicWindow" associationsOut="_ZC5FgLjdEey1RPzT2cry-g _ZC6ToLjdEey1RPzT2cry-g _ZDFSwLjdEey1RPzT2cry-g _ZDGg4LjdEey1RPzT2cry-g _ZDHH8LjdEey1RPzT2cry-g _ZDHvALjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YobXELjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDIWF7jdEey1RPzT2cry-g" position="260.0,200.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZDIWGLjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZDIWGbjdEey1RPzT2cry-g" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_Yv-JgLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWGrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWG7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWHLjdEey1RPzT2cry-g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWHbjdEey1RPzT2cry-g" name="plateau">
+      <modelElement href="RoboRally.uml#_Yv-JgrjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWHrjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv-Jg7jdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWH7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWILjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWIbjdEey1RPzT2cry-g" name="Plateau">
+        <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWIrjdEey1RPzT2cry-g" name="listeDesBots">
+      <modelElement href="RoboRally.uml#_Yv-JhLjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWI7jdEey1RPzT2cry-g" name="Generics">
+        <modelElement href="RoboRally.uml#_Yv-wkLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZDIWJLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv-wkbjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWJbjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWJrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWJ7jdEey1RPzT2cry-g" name="ArrayList">
+        <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWKLjdEey1RPzT2cry-g" name="idHisBot">
+      <modelElement href="RoboRally.uml#_Yv-wkrjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWKbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv_XoLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWKrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWK7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWLLjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWLbjdEey1RPzT2cry-g" name="hisBot">
+      <modelElement href="RoboRally.uml#_Yv_XobjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWLrjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv_XorjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWL7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWMLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWMbjdEey1RPzT2cry-g" name="Bot">
+        <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWMrjdEey1RPzT2cry-g" defaultValue="new ArrayList&lt;Carte>()" name="listeDesCartesCliquees">
+      <modelElement href="RoboRally.uml#_Yv_Xo7jdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWM7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWNLjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_ZDIWNbjdEey1RPzT2cry-g" name="Carte">
+        <modelElement href="RoboRally.uml#_YnxPwLjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWNrjdEey1RPzT2cry-g" defaultValue="new SetDeCartes()" name="listeDesCartes">
+      <modelElement href="RoboRally.uml#_Yv_XprjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWN7jdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv_-sbjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWOLjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWObjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWOrjdEey1RPzT2cry-g" name="SetDeCartes">
+        <modelElement href="RoboRally.uml#_Yo3b8LjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWO7jdEey1RPzT2cry-g" name="contentPane">
+      <modelElement href="RoboRally.uml#_Yv_-srjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWPLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv_-s7jdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWPbjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWPrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWP7jdEey1RPzT2cry-g" name="JPanel">
+        <modelElement href="RoboRally.uml#_YvNUgbjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWQLjdEey1RPzT2cry-g" defaultValue="true" name="bruitages">
+      <modelElement href="RoboRally.uml#_Yv_-tLjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWQbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwAlwLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWQrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWQ7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWRLjdEey1RPzT2cry-g" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDIWRbjdEey1RPzT2cry-g" defaultValue="true" name="bruitageCase">
+      <modelElement href="RoboRally.uml#_YwAlwbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDIWRrjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwAlw7jdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDIWR7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWSLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDIWSbjdEey1RPzT2cry-g" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZDIWSrjdEey1RPzT2cry-g" name="remplissageBorderLayout">
+      <modelElement href="RoboRally.uml#_YoeaYLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWS7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWTLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZDIWTbjdEey1RPzT2cry-g" name="statistiques">
+      <modelElement href="RoboRally.uml#_YofBcLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWTrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWT7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDIWULjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvoyUbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDIWUbjdEey1RPzT2cry-g" name="JPanel">
+          <modelElement href="RoboRally.uml#_YvNUgbjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZDIWUrjdEey1RPzT2cry-g" name="gagner">
+      <modelElement href="RoboRally.uml#_YofogLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWU7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWVLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZDIWVbjdEey1RPzT2cry-g" name="mourir">
+      <modelElement href="RoboRally.uml#_YofogbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWVrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWV7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZDIWWLjdEey1RPzT2cry-g" name="creationPlateau">
+      <modelElement href="RoboRally.uml#_YogPkLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWWbjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWWrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDIWW7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvpZYLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDIWXLjdEey1RPzT2cry-g" name="JPanel">
+          <modelElement href="RoboRally.uml#_YvNUgbjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZDIWXbjdEey1RPzT2cry-g" name="creationCoteGauche">
+      <modelElement href="RoboRally.uml#_YogPkbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWXrjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWX7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDIWYLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvpZYbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDIWYbjdEey1RPzT2cry-g" name="JPanel">
+          <modelElement href="RoboRally.uml#_YvNUgbjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZDIWYrjdEey1RPzT2cry-g" name="creationMenu">
+      <modelElement href="RoboRally.uml#_YohdsLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWY7jdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZDIWZLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDIWZbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvpZYrjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDIWZrjdEey1RPzT2cry-g" name="JMenuBar">
+          <modelElement href="RoboRally.uml#_YvLfUrjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZDIWZ7jdEey1RPzT2cry-g" name="musique">
+      <modelElement href="RoboRally.uml#_YoiEwLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWaLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWabjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDIWarjdEey1RPzT2cry-g" name="nom">
+        <modelElement href="RoboRally.uml#_YoiEwbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWa7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWbLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDIWbbjdEey1RPzT2cry-g" name="main" staticOperation="true">
+      <modelElement href="RoboRally.uml#_Yoir0LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWbrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWb7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDIWcLjdEey1RPzT2cry-g" name="args">
+        <modelElement href="RoboRally.uml#_YojS4LjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWcbjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_ZDIWcrjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDIWc7jdEey1RPzT2cry-g" name="setSetDeCartes">
+      <modelElement href="RoboRally.uml#_YvPJsLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWdLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWdbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDIWdrjdEey1RPzT2cry-g" name="listeDesCartes">
+        <modelElement href="RoboRally.uml#_YvPJsbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWd7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWeLjdEey1RPzT2cry-g" name="SetDeCartes">
+          <modelElement href="RoboRally.uml#_Yo3b8LjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDIWebjdEey1RPzT2cry-g" name="GraphicWindow">
+      <modelElement href="RoboRally.uml#_YvmWELjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZDIWerjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZDIWe7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWfLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDIWfbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yvm9JLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDIWfrjdEey1RPzT2cry-g" name="GraphicWindow">
+          <modelElement href="RoboRally.uml#_YobXELjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZDIWf7jdEey1RPzT2cry-g" name="plateau">
+        <modelElement href="RoboRally.uml#_YvmWEbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWgLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWgbjdEey1RPzT2cry-g" name="Plateau">
+          <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZDIWgrjdEey1RPzT2cry-g" name="listeDesBots">
+        <modelElement href="RoboRally.uml#_Yvm9ILjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWg7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWhLjdEey1RPzT2cry-g" name="ArrayList">
+          <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZDIWhbjdEey1RPzT2cry-g" name="idHisBot">
+        <modelElement href="RoboRally.uml#_Yvm9IbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWhrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWh7jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDIWiLjdEey1RPzT2cry-g" name="setListeDesBots">
+      <modelElement href="RoboRally.uml#_YvoLQLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDIWibjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDIWirjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDIWi7jdEey1RPzT2cry-g" name="listeDesBots">
+        <modelElement href="RoboRally.uml#_YvoLQbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDIWjLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDIWjbjdEey1RPzT2cry-g" name="ArrayList">
+          <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDgwkLjdEey1RPzT2cry-g" name="IOException">
+    <modelElement href="RoboRally.uml#_YuzE0bjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDgwkbjdEey1RPzT2cry-g" position="93.0,820.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_ZDgwkrjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_Yuzr4LjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <visibility xmi:id="_ZDgwk7jdEey1RPzT2cry-g" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDjM0LjdEey1RPzT2cry-g" name="UnsupportedAudioFileException">
+    <modelElement href="RoboRally.uml#_YvIcAbjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDjM0bjdEey1RPzT2cry-g" position="7.0,944.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_ZDjM0rjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YvJDELjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <visibility xmi:id="_ZDjM07jdEey1RPzT2cry-g" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDneQLjdEey1RPzT2cry-g" name="CaseLaser" generalizations="_ZEnj0LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoIcILjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDneQbjdEey1RPzT2cry-g" position="1187.0,-909.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZDneQrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZDneQ7jdEey1RPzT2cry-g" defaultValue="&quot;laser&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv7GMLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDneRLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDneRbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDneRrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDneR7jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Laser.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Laser, sont des cases qui tueront automatiquement votre\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;robot, il perdra donc une vie immédiatement s'il va sur ces cases,\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;évitez-les donc !\n&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv7GMrjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDneSLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDneSbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDneSrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZDneS7jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YurJALjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDneTLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDneTbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDneTrjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YurJAbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDneT7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDneULjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDrvsLjdEey1RPzT2cry-g" name="Joueur">
+    <modelElement href="RoboRally.uml#_YoqAkLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDrvsbjdEey1RPzT2cry-g" position="-379.0,825.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZDrvsrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZDrvs7jdEey1RPzT2cry-g" name="name">
+      <modelElement href="RoboRally.uml#_YwBM0LjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDrvtLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwBM0bjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDrvtbjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDrvtrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDrvt7jdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDrvuLjdEey1RPzT2cry-g" name="age">
+      <modelElement href="RoboRally.uml#_YwBM0rjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDrvubjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwBz4LjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDrvurjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDrvu7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDrvvLjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZDrvvbjdEey1RPzT2cry-g" name="Joueur">
+      <modelElement href="RoboRally.uml#_YorOsLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZDrvvrjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZDrvv7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDrvwLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDrvwbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YorOs7jdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDrvwrjdEey1RPzT2cry-g" name="Joueur">
+          <modelElement href="RoboRally.uml#_YoqAkLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZDrvw7jdEey1RPzT2cry-g" name="Joueur">
+      <modelElement href="RoboRally.uml#_Yor1wLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZDrvxLjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZDrvxbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDrvxrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDrvx7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yosc0rjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDrvyLjdEey1RPzT2cry-g" name="Joueur">
+          <modelElement href="RoboRally.uml#_YoqAkLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZDrvybjdEey1RPzT2cry-g" name="j">
+        <modelElement href="RoboRally.uml#_Yor1wbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDrvyrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDrvy7jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZDrvzLjdEey1RPzT2cry-g" name="h">
+        <modelElement href="RoboRally.uml#_Yor1wrjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDrvzbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDrvzrjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDrvz7jdEey1RPzT2cry-g" name="toString">
+      <modelElement href="RoboRally.uml#_Yosc07jdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDrv0LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDrv0bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDrv0rjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yosc1LjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDrv07jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDzrgLjdEey1RPzT2cry-g" name="Serveur" associationsOut="_ZDwBILjdEey1RPzT2cry-g _ZDwBIbjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoyjcLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDzrgbjdEey1RPzT2cry-g" position="-98.0,1108.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZDzrgrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZDzrg7jdEey1RPzT2cry-g" defaultValue="new  ArrayList&lt;> ()" name="listeBot" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_YwDCALjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDzrhLjdEey1RPzT2cry-g" name="Generics">
+        <modelElement href="RoboRally.uml#_YwDCAbjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZDzrhbjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwDpELjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDzrhrjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDzrh7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDzriLjdEey1RPzT2cry-g" name="ArrayList">
+        <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDzribjdEey1RPzT2cry-g" defaultValue="new ArrayList&lt; ObjectOutputStream>()" name="fluxsortants" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_YwDpEbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDzrirjdEey1RPzT2cry-g" name="Generics">
+        <modelElement href="RoboRally.uml#_YwDpErjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ZDzri7jdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwEQILjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDzrjLjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDzrjbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDzrjrjdEey1RPzT2cry-g" name="ArrayList">
+        <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDzrj7jdEey1RPzT2cry-g" defaultValue="5056" name="PORT" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_YwEQIbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzrkLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDzrkbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDzrkrjdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZDzrk7jdEey1RPzT2cry-g" defaultValue="2" name="nombreJoueurs" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_YwEQI7jdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZDzrlLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwE3MLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZDzrlbjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZDzrlrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZDzrl7jdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZDzrmLjdEey1RPzT2cry-g" name="botDansLaCase" staticOperation="true">
+      <modelElement href="RoboRally.uml#_YozKgLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzrmbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDzrmrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZDzrm7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YozxkrjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZDzrnLjdEey1RPzT2cry-g" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZDzrnbjdEey1RPzT2cry-g" name="x">
+        <modelElement href="RoboRally.uml#_YozxkLjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDzrnrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDzrn7jdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZDzroLjdEey1RPzT2cry-g" name="y">
+        <modelElement href="RoboRally.uml#_YozxkbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDzrobjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDzrorjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDzro7jdEey1RPzT2cry-g" name="faireMourirTousLesBotsColonne" staticOperation="true">
+      <modelElement href="RoboRally.uml#_Yozxk7jdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzrpLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDzrpbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDzrprjdEey1RPzT2cry-g" name="x">
+        <modelElement href="RoboRally.uml#_Yo0YoLjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDzrp7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDzrqLjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDzrqbjdEey1RPzT2cry-g" name="faireMourirTousLesBotsLigne" staticOperation="true">
+      <modelElement href="RoboRally.uml#_Yo0YobjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzrqrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDzrq7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDzrrLjdEey1RPzT2cry-g" name="y">
+        <modelElement href="RoboRally.uml#_Yo0YorjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDzrrbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZDzrrrjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZDzrr7jdEey1RPzT2cry-g" name="main" staticOperation="true">
+      <modelElement href="RoboRally.uml#_Yo0_sLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZDzrsLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZDzrsbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZDzrsrjdEey1RPzT2cry-g" name="args">
+        <modelElement href="RoboRally.uml#_Yo0_sbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZDzrs7jdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_ZDzrtLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZD0SkLjdEey1RPzT2cry-g" name="partager" staticOperation="true">
+      <modelElement href="RoboRally.uml#_YvscsLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD0SkbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD0SkrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZD0Sk7jdEey1RPzT2cry-g" name="l">
+        <modelElement href="RoboRally.uml#_YvscsbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD0SlLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD0SlbjdEey1RPzT2cry-g" name="ArrayList">
+          <modelElement href="RoboRally.uml#_Yu3WQbjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZD_4wLjdEey1RPzT2cry-g" name="ThreadClient" associationsOut="_ZD5yILjdEey1RPzT2cry-g _ZD7AQbjdEey1RPzT2cry-g _ZD9cgLjdEey1RPzT2cry-g _ZD-qoLjdEey1RPzT2cry-g _ZD_RsLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yo7GULjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZD_4wbjdEey1RPzT2cry-g" position="474.0,834.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZD_4wrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZD_4w7jdEey1RPzT2cry-g" name="s">
+      <modelElement href="RoboRally.uml#_YwFeQbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZD_4xLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwGFULjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZD_4xbjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_4xrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZD_4x7jdEey1RPzT2cry-g" name="Socket">
+        <modelElement href="RoboRally.uml#_Yu2vMLjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZD_4yLjdEey1RPzT2cry-g" name="in">
+      <modelElement href="RoboRally.uml#_YwGFUbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZD_4ybjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwGFUrjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZD_4yrjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_4y7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZD_4zLjdEey1RPzT2cry-g" name="ObjectInputStream">
+        <modelElement href="RoboRally.uml#_Yu0S8LjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZD_4zbjdEey1RPzT2cry-g" name="out">
+      <modelElement href="RoboRally.uml#_YwGFU7jdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZD_4zrjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwGsYLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZD_4z7jdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_40LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZD_40bjdEey1RPzT2cry-g" name="ObjectOutputStream">
+        <modelElement href="RoboRally.uml#_Yu06ALjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZD_40rjdEey1RPzT2cry-g" name="r">
+      <modelElement href="RoboRally.uml#_YwGsYbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZD_407jdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwGsYrjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZD_41LjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_41bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZD_41rjdEey1RPzT2cry-g" name="Bot">
+        <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZD_417jdEey1RPzT2cry-g" name="p">
+      <modelElement href="RoboRally.uml#_YwGsY7jdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZD_42LjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwGsZLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZD_42bjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZD_42rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZD_427jdEey1RPzT2cry-g" name="Plateau">
+        <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZD_43LjdEey1RPzT2cry-g" name="run">
+      <modelElement href="RoboRally.uml#_Yo87gLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZD_43bjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD_43rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZD_437jdEey1RPzT2cry-g" name="ThreadClient">
+      <modelElement href="RoboRally.uml#_Yvu48LjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZD_44LjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZD_44bjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZD_44rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZD_447jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvvgALjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZD_45LjdEey1RPzT2cry-g" name="ThreadClient">
+          <modelElement href="RoboRally.uml#_Yo7GULjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZD_45bjdEey1RPzT2cry-g" name="s">
+        <modelElement href="RoboRally.uml#_Yvu48bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD_45rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD_457jdEey1RPzT2cry-g" name="Socket">
+          <modelElement href="RoboRally.uml#_Yu2vMLjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZD_46LjdEey1RPzT2cry-g" name="out">
+        <modelElement href="RoboRally.uml#_Yvu48rjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD_46bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD_46rjdEey1RPzT2cry-g" name="ObjectOutputStream">
+          <modelElement href="RoboRally.uml#_Yu06ALjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZD_467jdEey1RPzT2cry-g" name="in">
+        <modelElement href="RoboRally.uml#_Yvu487jdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD_47LjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD_47bjdEey1RPzT2cry-g" name="ObjectInputStream">
+          <modelElement href="RoboRally.uml#_Yu0S8LjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZD_47rjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_Yvu49LjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD_477jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD_48LjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZD_48bjdEey1RPzT2cry-g" name="p">
+        <modelElement href="RoboRally.uml#_Yvu49bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZD_48rjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZD_487jdEey1RPzT2cry-g" name="Plateau">
+          <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZEGmcLjdEey1RPzT2cry-g" name="CaseCheckpoint" generalizations="_ZEm8wLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoC8kLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEGmcbjdEey1RPzT2cry-g" position="1691.0,-1021.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEGmcrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZEGmc7jdEey1RPzT2cry-g" name="ordre">
+      <modelElement href="RoboRally.uml#_Yv54E7jdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZEGmdLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_Yv6fILjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZEGmdbjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZEGmdrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEGmd7jdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZEGmeLjdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Checkpoint.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Checkpoint sont les cases où votre robot doit aller dans\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;l'ordre pour gagner, il ne risque rien pour sa vie, il peut donc y\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;aller en toute tranquillité.&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv6fIbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEGmebjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGmerjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEGme7jdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZEGmfLjdEey1RPzT2cry-g" name="getNom">
+      <modelElement href="RoboRally.uml#_YoEKsLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEGmfbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGmfrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEGmf7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoExwLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEGmgLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZEGmgbjdEey1RPzT2cry-g" name="CaseCheckpoint">
+      <modelElement href="RoboRally.uml#_YoFY0LjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZEGmgrjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZEGmg7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGmhLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEGmhbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoFY1LjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEGmhrjdEey1RPzT2cry-g" name="CaseCheckpoint">
+          <modelElement href="RoboRally.uml#_YoC8kLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZEGmh7jdEey1RPzT2cry-g" name="ordre">
+        <modelElement href="RoboRally.uml#_YoFY0bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEGmiLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEGmibjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZEGmirjdEey1RPzT2cry-g" name="getOrdre">
+      <modelElement href="RoboRally.uml#_YoF_4LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEGmi7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGmjLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEGmjbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoF_4bjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEGmjrjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZEGmj7jdEey1RPzT2cry-g" name="setOrdre">
+      <modelElement href="RoboRally.uml#_YoGm8LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEGmkLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGmkbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZEGmkrjdEey1RPzT2cry-g" name="ordre">
+        <modelElement href="RoboRally.uml#_YoGm8bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEGmk7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEGmlLjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZEGmlbjdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_Yup64LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEGmlrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEGml7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZEGmmLjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_Yup64bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEGmmbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEGmmrjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_ZEOiQLjdEey1RPzT2cry-g" name="Orientation">
+    <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEPJULjdEey1RPzT2cry-g" position="590.0,1101.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEPJUbjdEey1RPzT2cry-g" label="+"/>
+    <literals xmi:id="_ZEPJUrjdEey1RPzT2cry-g" name="haut">
+      <modelElement href="RoboRally.uml#_YouSALjdEey1RPzT2cry-g"/>
+    </literals>
+    <literals xmi:id="_ZEPJU7jdEey1RPzT2cry-g" name="bas">
+      <modelElement href="RoboRally.uml#_YouSAbjdEey1RPzT2cry-g"/>
+    </literals>
+    <literals xmi:id="_ZEPJVLjdEey1RPzT2cry-g" name="droite">
+      <modelElement href="RoboRally.uml#_You5ELjdEey1RPzT2cry-g"/>
+    </literals>
+    <literals xmi:id="_ZEPJVbjdEey1RPzT2cry-g" name="gauche">
+      <modelElement href="RoboRally.uml#_You5EbjdEey1RPzT2cry-g"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZEXFILjdEey1RPzT2cry-g" name="CarteO" generalizations="_ZEVP8LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yn7n0LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEXFIbjdEey1RPzT2cry-g" position="-338.0,-965.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEXFIrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZEXFI7jdEey1RPzT2cry-g" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_Yv4p8rjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEXFJLjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZEXFJbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEXFJrjdEey1RPzT2cry-g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZEXFJ7jdEey1RPzT2cry-g" name="nom">
+      <modelElement href="RoboRally.uml#_Yv5RALjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEXFKLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEXFKbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEXFKrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZEXFK7jdEey1RPzT2cry-g" name="o">
+      <modelElement href="RoboRally.uml#_Yv5RAbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEXFLLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEXFLbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEXFLrjdEey1RPzT2cry-g" name="Orientation">
+        <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZEXFL7jdEey1RPzT2cry-g" name="CarteO">
+      <modelElement href="RoboRally.uml#_Yum3kLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZEXFMLjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZEXFMbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEXFMrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEXFM7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yum3lLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEXFNLjdEey1RPzT2cry-g" name="CarteO">
+          <modelElement href="RoboRally.uml#_Yn7n0LjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZEXFNbjdEey1RPzT2cry-g" name="o">
+        <modelElement href="RoboRally.uml#_Yum3kbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEXFNrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEXFN7jdEey1RPzT2cry-g" name="Orientation">
+          <modelElement href="RoboRally.uml#_Yotq8LjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZEXFOLjdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YuneoLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEXFObjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEXFOrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZEXFO7jdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuneobjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEXFPLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEXFPbjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZEbWkLjdEey1RPzT2cry-g" name="CaseTrou" generalizations="_ZEnj1LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoUCULjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEbWkbjdEey1RPzT2cry-g" position="2179.0,-909.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEbWkrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZEbWk7jdEey1RPzT2cry-g" defaultValue="&quot;trou&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv9icLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEbWlLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEbWlbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEbWlrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZEbWl7jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Trous.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Trous sont des cases qui tueront immédiatement votre\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;robot, il perdra donc une vie automatiquement s'il va sur ces\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;cases, ce sont donc des cases à éviter !&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv9icrjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEbWmLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEbWmbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEbWmrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZEbWm7jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YuwokLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEbWnLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEbWnbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZEbWnrjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuwokbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEbWn7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEbWoLjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZEg2ILjdEey1RPzT2cry-g" name="SetDeCartes" associationsIn="_ZDHH8LjdEey1RPzT2cry-g" associationsOut="_ZEeZ4LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yo3b8LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEg2IbjdEey1RPzT2cry-g" position="-349.0,-40.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEg2IrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZEg2I7jdEey1RPzT2cry-g" name="deck">
+      <modelElement href="RoboRally.uml#_YwE3MbjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZEg2JLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwFeQLjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZEg2JbjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZEg2JrjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_ZEg2J7jdEey1RPzT2cry-g" name="Carte">
+        <modelElement href="RoboRally.uml#_YnxPwLjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZEg2KLjdEey1RPzT2cry-g" name="SetDeCartes">
+      <modelElement href="RoboRally.uml#_Yo4qELjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZEg2KbjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZEg2KrjdEey1RPzT2cry-g" label="~"/>
+      <cardinality xmi:id="_ZEg2K7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEg2LLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yo4qE7jdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEg2LbjdEey1RPzT2cry-g" name="SetDeCartes">
+          <modelElement href="RoboRally.uml#_Yo3b8LjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZEg2LrjdEey1RPzT2cry-g" name="addRandomCarte">
+      <modelElement href="RoboRally.uml#_Yo4qFLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEg2L7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEg2MLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ZEg2MbjdEey1RPzT2cry-g" name="get">
+      <modelElement href="RoboRally.uml#_Yo5RILjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEg2MrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEg2M7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEg2NLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvYToLjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEg2NbjdEey1RPzT2cry-g" name="Carte">
+          <modelElement href="RoboRally.uml#_YnxPwLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZEg2NrjdEey1RPzT2cry-g" name="i">
+        <modelElement href="RoboRally.uml#_Yo5RIbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEg2N7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEg2OLjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ZEg2ObjdEey1RPzT2cry-g" name="size">
+      <modelElement href="RoboRally.uml#_Yo54MLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEg2OrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEg2O7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEg2PLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yo54MbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEg2PbjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZEg2PrjdEey1RPzT2cry-g" name="remove">
+      <modelElement href="RoboRally.uml#_YvYTobjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEg2P7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEg2QLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZEg2QbjdEey1RPzT2cry-g" name="carte">
+        <modelElement href="RoboRally.uml#_YvYTorjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEg2QrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEg2Q7jdEey1RPzT2cry-g" name="Carte">
+          <modelElement href="RoboRally.uml#_YnxPwLjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZErOMLjdEey1RPzT2cry-g" name="Case" abstractClass="true" associationsIn="_ZEoK4LjdEey1RPzT2cry-g" subclassedBy="_ZEm8wLjdEey1RPzT2cry-g _ZEnj0LjdEey1RPzT2cry-g _ZEnj0bjdEey1RPzT2cry-g _ZEnj0rjdEey1RPzT2cry-g _ZEnj07jdEey1RPzT2cry-g _ZEnj1LjdEey1RPzT2cry-g _ZE0_MLjdEey1RPzT2cry-g _ZE53sLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_Yn_SMLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZErOMbjdEey1RPzT2cry-g" position="1368.0,-1205.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZErOMrjdEey1RPzT2cry-g" label="+"/>
+    <operations xmi:id="_ZErOM7jdEey1RPzT2cry-g" abstractOperation="true" name="getNom">
+      <modelElement href="RoboRally.uml#_Yn_5QLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZErONLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZErONbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZErONrjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_Yn_5QbjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZErON7jdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZErOOLjdEey1RPzT2cry-g" abstractOperation="true" name="getDescription">
+      <modelElement href="RoboRally.uml#_Yn_5QrjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZErOObjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZErOOrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZErOO7jdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YoAgULjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZErOPLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZErOPbjdEey1RPzT2cry-g" abstractOperation="true" name="effet">
+      <modelElement href="RoboRally.uml#_YuoFsLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZErOPrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZErOP7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZErOQLjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuoFsbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZErOQbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZErOQrjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZEwGsLjdEey1RPzT2cry-g" name="Plateau" associationsIn="_ZDFSwLjdEey1RPzT2cry-g _ZD7AQbjdEey1RPzT2cry-g" associationsOut="_ZEoK4LjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZEwGsbjdEey1RPzT2cry-g" position="729.0,9.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZEwGsrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZEwGs7jdEey1RPzT2cry-g" defaultValue="10" name="taille" staticAttribute="true">
+      <modelElement href="RoboRally.uml#_YwBz4bjdEey1RPzT2cry-g"/>
+      <stereotypes xmi:id="_ZEwGtLjdEey1RPzT2cry-g" name="LegacyStyledElement">
+        <modelElement href="RoboRally.uml#_YwBz4rjdEey1RPzT2cry-g"/>
+      </stereotypes>
+      <visibility xmi:id="_ZEwGtbjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEwGtrjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZEwGt7jdEey1RPzT2cry-g" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZEwGuLjdEey1RPzT2cry-g" defaultValue="new Case[taille][taille]" name="cases">
+      <modelElement href="RoboRally.uml#_YwCa8bjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEwGubjdEey1RPzT2cry-g" label="-"/>
+      <cardinality xmi:id="_ZEwGurjdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_ZEwGu7jdEey1RPzT2cry-g" name="Case">
+        <modelElement href="RoboRally.uml#_Yn_SMLjdEey1RPzT2cry-g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZEwGvLjdEey1RPzT2cry-g" name="Plateau">
+      <modelElement href="RoboRally.uml#_YowHMLjdEey1RPzT2cry-g"/>
+      <keywords xmi:id="_ZEwGvbjdEey1RPzT2cry-g" keyword="create"/>
+      <visibility xmi:id="_ZEwGvrjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEwGv7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEwGwLjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YowHM7jdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEwGwbjdEey1RPzT2cry-g" name="Plateau">
+          <modelElement href="RoboRally.uml#_You5ErjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ZEwGwrjdEey1RPzT2cry-g" name="caseEnIJ">
+      <modelElement href="RoboRally.uml#_YowuQLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZEwGw7jdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZEwGxLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ZEwGxbjdEey1RPzT2cry-g">
+        <modelElement href="RoboRally.uml#_YvTbILjdEey1RPzT2cry-g"/>
+        <type xmi:id="_ZEwGxrjdEey1RPzT2cry-g" name="Case">
+          <modelElement href="RoboRally.uml#_Yn_SMLjdEey1RPzT2cry-g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ZEwGx7jdEey1RPzT2cry-g" name="i">
+        <modelElement href="RoboRally.uml#_YowuQbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEwGyLjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEwGybjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ZEwGyrjdEey1RPzT2cry-g" name="j">
+        <modelElement href="RoboRally.uml#_YowuQrjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZEwGy7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZEwGzLjdEey1RPzT2cry-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZE2NULjdEey1RPzT2cry-g" name="CaseMur" generalizations="_ZE0_MLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoK4YLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZE2NUbjdEey1RPzT2cry-g" position="2680.0,-909.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZE2NUrjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZE2NU7jdEey1RPzT2cry-g" defaultValue="&quot;murH&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv7tQbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE2NVLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE2NVbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZE2NVrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZE2NV7jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Mur.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Murs vous bloquent sur la case où est votre robot,\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;il est donc impossible d'aller sur une case Mur !&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv8UULjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE2NWLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE2NWbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZE2NWrjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZE2NW7jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YurwELjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE2NXLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE2NXbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZE2NXrjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YurwEbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZE2NX7jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZE2NYLjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZE7s4LjdEey1RPzT2cry-g" name="CaseBroyeur" generalizations="_ZE53sLjdEey1RPzT2cry-g">
+    <modelElement href="RoboRally.uml#_YoBHYLjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZE7s4bjdEey1RPzT2cry-g" position="3170.0,-909.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZE7s4rjdEey1RPzT2cry-g" label="+"/>
+    <attributes xmi:id="_ZE7s47jdEey1RPzT2cry-g" defaultValue="&quot;broyeur&quot;" name="nom">
+      <modelElement href="RoboRally.uml#_Yv5RArjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE7s5LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE7s5bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZE7s5rjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ZE7s57jdEey1RPzT2cry-g" defaultValue="&quot;Ci-contre vous trouverez l'image qui représente les cases Broyeurs.\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;Les cases Broyeurs sont des cases qui tueront immédiatement votre robot,\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;il perdra donc une vie automatiquement s'il va sur ces cases,\n&quot;&#xD;&#xA;&#x9;&#x9;&#x9;+ &quot;ce sont donc des cases à éviter !&quot;" name="description">
+      <modelElement href="RoboRally.uml#_Yv54EbjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE7s6LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE7s6bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <type xmi:id="_ZE7s6rjdEey1RPzT2cry-g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ZE7s67jdEey1RPzT2cry-g" name="effet">
+      <modelElement href="RoboRally.uml#_YuoswLjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE7s7LjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE7s7bjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZE7s7rjdEey1RPzT2cry-g" name="r">
+        <modelElement href="RoboRally.uml#_YuoswbjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZE7s77jdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+        <type xmi:id="_ZE7s8LjdEey1RPzT2cry-g" name="Bot">
+          <modelElement href="RoboRally.uml#_YngxELjdEey1RPzT2cry-g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZE-wMLjdEey1RPzT2cry-g" name="Client2">
+    <modelElement href="RoboRally.uml#_YoZh4LjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZE-wMbjdEey1RPzT2cry-g" position="794.0,1083.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ZE-wMrjdEey1RPzT2cry-g" label="+"/>
+    <operations xmi:id="_ZE-wM7jdEey1RPzT2cry-g" name="main" staticOperation="true">
+      <modelElement href="RoboRally.uml#_YoaI8LjdEey1RPzT2cry-g"/>
+      <visibility xmi:id="_ZE-wNLjdEey1RPzT2cry-g" label="+"/>
+      <cardinality xmi:id="_ZE-wNbjdEey1RPzT2cry-g" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ZE-wNrjdEey1RPzT2cry-g" name="args">
+        <modelElement href="RoboRally.uml#_YoaI8bjdEey1RPzT2cry-g"/>
+        <cardinality xmi:id="_ZE-wN7jdEey1RPzT2cry-g" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_ZE-wOLjdEey1RPzT2cry-g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ZDlCALjdEey1RPzT2cry-g" name="LineUnavailableException">
+    <modelElement href="RoboRally.uml#_YvH08bjdEey1RPzT2cry-g"/>
+    <visualProperties xmi:id="_ZDlCAbjdEey1RPzT2cry-g" position="-250.0,623.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_ZDlCArjdEey1RPzT2cry-g" name="Reference">
+      <modelElement href="RoboRally.uml#_YvIcALjdEey1RPzT2cry-g"/>
+    </stereotypes>
+    <visibility xmi:id="_ZDlCA7jdEey1RPzT2cry-g" label="+"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
