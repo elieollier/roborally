@@ -124,7 +124,14 @@ public class Client1
             
             
             
-            
+	      
+	      
+                 
+            if(robotClient.getVie() < 0) {
+                fenetreJoueur.mourir();}
+
+  else if (robotClient.getOrdre() == 3) {
+                fenetreJoueur.gagner();}
             
             
             }  
