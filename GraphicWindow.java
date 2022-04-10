@@ -1,3 +1,5 @@
+package Projet;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Desktop;
@@ -162,14 +164,14 @@ public class GraphicWindow extends JFrame {
 		return panel;
 	}
 	
-	private void gagner() {
+	public void gagner() {
 		try {
 			GraphicWindow.this.musique("Sons/gagner.wav");
 		} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
 			e1.printStackTrace();
 		}
 		JOptionPane.showMessageDialog(GraphicWindow.this,
-			    "Félicitations, votre mission est reussie !\n"
+			    "Félicitations, votre mission est réussie !\n"
 			    + "Vous avez gagné, mais à un détail près, vous auriez pu perdre.\n"
 			    + "Quelle chance, et quel talent !",
 			    "Fin de partie : Vous avez pu sauver l'humanité",
@@ -178,7 +180,7 @@ public class GraphicWindow extends JFrame {
 		bruitages = false;
 	}
 	
-	private void mourir() {
+	public void mourir() {
 		try {
 			GraphicWindow.this.musique("Sons/mourir.wav");
 		} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e1) {
@@ -428,7 +430,7 @@ public class GraphicWindow extends JFrame {
 			JMenuItem images = new JMenuItem("Les crédits des Images");
 			images.addActionListener(e->{
 				JOptionPane.showMessageDialog(GraphicWindow.this,
-					    "Les images des cases, et celles du robot ont été intégralement réalisés par\n"
+					    "Les images des cases, et celles du robot ont été intégralement réalisées par\n"
 					    + "Elie Cucurou–Ollier. Tandis que Thomas Ayrivié à réalisé celles des cartes.\n"
 					    + "Sans oublier Candice Déjean, réalisatrice du logo.",
 					    "Les crédits des Images",
@@ -454,37 +456,42 @@ public class GraphicWindow extends JFrame {
 	public List<Carte> getListeDesCartesCliquees() {
 		return listeDesCartesCliquees;
 	}
-
-	public static void main(String[] args) throws Exception {
-		ArrayList<Bot> bot = new ArrayList<Bot>();
-		Bot a = new Bot(5,1);
-		a.setVie(15);
-		
-		bot.add(a);
-		bot.add(new Bot(2,4));
-		bot.add(new Bot(3,3));
-		
-		ArrayList<Bot> bot2 = new ArrayList<Bot>();
-		bot2.add(new Bot(3,3));
-		bot2.add(a);
-		a.setO(Orientation.gauche);
-		GraphicWindow window = new GraphicWindow(new Plateau(), bot,  a.getID());
-		window.setVisible(true);
-		
-			window.setListeDesBots(bot2);
-		
-		System.out.print(window.getListeDesCartesCliquees());
-
-	     int nombre = new Scanner(System.in).nextInt();
-	     System.out.print(window.getListeDesCartesCliquees());
-	     window.mourir();
-	     a.setX(0);
-	     a.setY(0);
-	     a.setOrdre(10);
-	     
-	     
-	     window.setListeDesBots(bot);
-	     window.setSetDeCartes(new SetDeCartes());
-	     System.out.println(window.getListeDesCartesCliquees());
-	}
+	
+	// TESTS
+//	public static void main(String[] args) throws Exception {
+//		
+//		//Test Partie
+//		ArrayList<Bot> bot = new ArrayList<Bot>();
+//		Plateau p =new Plateau();
+//		Bot a = new Bot(p); a.setVie(5); a.setOrdre(2);
+//		bot.add(a);
+//		bot.add(new Bot(p));
+//		bot.add(new Bot(p));
+//		bot.add(new Bot(p));
+//		
+//		a.setO(Orientation.gauche);
+//		GraphicWindow window = new GraphicWindow(new Plateau(), bot,  a.getID());
+//		window.setVisible(true);
+//		System.out.print(window.getListeDesCartesCliquees());
+//		
+//		//Test PERDRE
+//		Scanner s = new Scanner(System.in);
+//		int nombre = s.nextInt();
+//		System.out.print(window.getListeDesCartesCliquees());
+//		window.mourir();
+//		a.setX(0); a.setY(0);
+//		a.setOrdre(5);
+//		  
+//		window.setListeDesBots(bot);
+//		window.setSetDeCartes(new SetDeCartes());
+//		System.out.println(window.getListeDesCartesCliquees());
+//		
+//		//Test GAGNER
+//	    nombre = s.nextInt();
+//	    window.gagner();
+//		ArrayList<Bot> bot2 = new ArrayList<Bot>();
+//		bot2.add(new Bot(p));
+//		bot2.add(a);
+//		window.setListeDesBots(bot2);
+//	}
 }
